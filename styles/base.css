@@ -120,3 +120,22 @@ a {
 	text-align: center;
 	color: #AAA;
 }
+
+
+.T{
+    height: 30px;
+    padding-bottom: 15px;
+}
+.T h2{
+    font-family: 'FZQK';
+    font-size: 28px;
+    float: left;
+    font-weight: 300;
+}
+.T span{
+    float: right;
+	height: 20px;
+	line-height: 32px;
+	text-align: right;
+	font-size: 13px;
+}
