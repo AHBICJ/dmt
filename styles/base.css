@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'FZQK';
+    src:url(../fonts/FZQK.TTF);
+}
+ol,li{
+    list-style: none;
+}
+body{
+    height: 100%;
+    background: url(../images/TopBG.jpg)  top center no-repeat;
+    font: normal 16px "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #4F4742;
+}
+.bigCon{
+    width: 100%;
+	overflow: hidden;
+}
+.con{
+    width: 1100px;
+	margin: 0 auto;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    transition: .1s linear;
+    color: #333;
+}
+
+/* 顶部 */
+.topOut{
+	height: 490px;
+	left: 0;
+	position: absolute;
+	z-index: 99;
+}
+#logo{
+    float: left;
+	width: 200px;
+	height: 315px;
+	padding-top: 80px;
+    padding-left: 20px;
+}
+#logo a{
+	width: 200px;
+	height: 315px;
+    display: block;
+    background: url(../images/yueju.png) no-repeat;
+}
+#logo a:hover{
+	background-position: 0px -4px;
+}
+.TopOut{
+	height: 510px;
+}
+.top{
+	position: relative;
+}
+#topPic{
+    float: left;
+	width: 680px;
+	height: 510px;
+	padding-left: 140px;
+}
+#topPic li{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out 0s;
+}
+
+/* 导航 */
+#nav { float: right; width:220px; height:360px; overflow:hidden;
+    padding-right: 30px;
+	padding-top: 70px;}
+
+#nav li { float:left; width:40px; height:165px; margin-bottom:15px; padding-right:20px;}
+.pl30 {	padding-left: 30px;}
+#nav li a { width:40px; height:165px; display:block; background:url(../images/YJmenuOff.png) no-repeat;}
+#nav li.n1 a { background-position:0px 0px;}
+#nav li.n2 a { background-position:-60px 0px;}
+#nav li.n3 a { background-position:-120px 0px;}
+#nav li.n4 a { background-position:-180px 0px;}
+#nav li.n5 a { background-position:-30px -180px;}
+#nav li.n6 a { background-position:-90px -180px;}
+#nav li.n7 a { background-position:-150px -180px;}
+#nav li.n8 a { background-position:-210px -180px;}
+#nav li a:hover { background:url(../images/YJmenuOn.png) no-repeat;}
+#nav li.n1 a:hover { background-position:0px 0px;}
+#nav li.n2 a:hover { background-position:-60px 0px;}
+#nav li.n3 a:hover { background-position:-120px 0px;}
+#nav li.n4 a:hover { background-position:-180px 0px;}
+#nav li.n5 a:hover { background-position:-30px -180px;}
+#nav li.n6 a:hover { background-position:-90px -180px;}
+#nav li.n7 a:hover { background-position:-150px -180px;}
+#nav li.n8 a:hover { background-position:-210px -180px;}
+#nav li a#on { background:url(../images/WZOJmenuOn.png) no-repeat;}
+#nav li.n1 a#on { background-position:0px 0px;}
+#nav li.n2 a#on { background-position:-60px 0px;}
+#nav li.n3 a#on { background-position:-120px 0px;}
+#nav li.n4 a#on { background-position:-180px 0px;}
+#nav li.n5 a#on { background-position:-30px -180px;}
+#nav li.n6 a#on { background-position:-90px -180px;}
+#nav li.n7 a#on { background-position:-150px -180px;}
+#nav li.n8 a#on { background-position:-210px -180px;}
+
+/* foot */
+.foot{
+	background: #F3F3F3;
+	padding: 15px 0px;
+    font-size: 15px;
+	font-weight: bold;
+}
+.copyright{
+    width: 100%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #AAA;
+}
