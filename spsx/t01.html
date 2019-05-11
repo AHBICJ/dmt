@@ -4,6 +4,8 @@
     <title>越剧-赏析</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <link rel="stylesheet" href="/styles/knowledge.css">
 </head>
 
@@ -15,7 +17,7 @@
             </div>
             <div id="nav">
                 <ul>
-                    <li class="n1"><a href="/index.html" id="on"></a></li>
+                    <li class="n1"><a href="/index.html"></a></li>
                     <li class="n2"><a href="/introduction.html"></a></li>
                     <li class="n3"><a href="/knowledge.html"></a></li>
                     <!-- <li class="n4"><a href=""></a></li> -->
@@ -45,9 +47,7 @@
             </div>
 
             <div class="description">
-                <p>瓯剧为浙江省传统地方戏曲剧种之一，又称"温州乱弹"。是流行在浙江南部温州一带的古老剧种，它以"书面温话"作为舞台语言。已有三百多年历史，较有影响的传统剧目有《高机与吴三春》、《阳河摘印》及创作的现代戏《东海小哨兵》等。
-                </p>
-                <p>1959年定名为瓯剧。瓯剧以唱乱弹为主表演上已形成统一的艺术风格，具有朴素、明快、粗犷而细腻的特点。文武兼备，唱做并重，以做工见长。音乐朴素、明快、流畅，表现力很强，能细致地表达各种人物内心复杂感情。
+                <p>越剧——中国第二大剧种，有第二国剧之称，又被称为是“流传最广的地方剧种”，有观点认为是“最大的地方戏曲剧种”，在国外被称为“中国歌剧”。亦为中国五大戏曲剧种之一。发源于浙江嵊州，发祥于上海，繁荣于全国，流传于世界，在发展中汲取了昆曲、话剧、绍剧等特色剧种之大成，经历了由男子越剧到女子越剧为主的历史性演变，为首批国家级非物质文化遗产名录。
                 </p>
             </div>
         </div>
@@ -62,8 +62,15 @@
                         <div class="title">《信陵公子》选段 郑国凤</div>
                         <div class="info">2017-08-03 13:47:00</div>
                         <div class="content" style="text-align: center">
-                            <iframe frameborder="0" width="540px" height="410px" src="https://v.qq.com/txp/iframe/player.html?vid=y0861b4p4e0" allowFullScreen="true"></iframe>
+                            <iframe frameborder="0" width="540px" height="410px"
+                                src="https://v.qq.com/txp/iframe/player.html?vid=y0861b4p4e0"
+                                allowFullScreen="true"></iframe>
+
+                            <h3>剧情简介</h3>
+                            <p>战国时期，秦国围攻赵国，信陵君劝魏王救赵，魏王惧秦不肯出兵，信陵君忧心忡忡。</p>
+                            <div class="return" style="text-align: center"> <a href="/enjoy.html">返回列表</a> </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -72,18 +79,34 @@
                     <h2>三分互动</h2>
                 </div>
                 <div class="C">
-
+                    <h1>这个区域用来 用来摆放一些和视频有关系的互动</h1>
                 </div>
             </div>
-            <div class="comment">
 
-            </div>
         </div>
-
-
+        <div class="con vcom">
+            <div id="vcomments" style="padding-bottom: 65px;"></div>
+            <script>
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'hLaBCUe3D1fDYk9e4pSl3hVO-gzGzoHsz',
+                    appKey: '26uHMux3CrejqhrIyOAI42qX',
+                    notify: false,
+                    verify: false,
+                    avatar: 'identicon',
+                    placeholder: '留下一些评论吧...'
+                });
+                var infoEle = document.querySelector('#vcomments .info');
+                if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+                    infoEle.childNodes.forEach(function (item) {
+                        item.parentNode.removeChild(item);
+                    });
+                }
+            </script>
+        </div>
     </div>
     <div class="bigCon foot">
-        <div class="copyright">抄袭by野蜂</div>
+        <div class="copyright">BY Yefeng</div>
     </div>
     <script src="/scripts/slide.js"></script>
 </body>

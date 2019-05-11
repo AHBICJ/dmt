@@ -39,3 +39,7 @@ ul.vedioCard li a:hover >div {
 p.vtitle{
     padding-top: 5px;
 }
+.contentArea p{
+    text-align: left;
+    text-indent: 2em;
+}

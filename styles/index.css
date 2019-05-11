@@ -1,155 +1,293 @@
 @import url("base.css");
-@import url("introduction.css");
+@import url("intro.css");
 /* 主体 */
 
 /* 经典剧目 容器 */
-.C2{
+.C2 {
     margin-bottom: 40px;
 }
+
 /* 经典剧目 */
-.jdjm{
+.jdjm {
     float: left;
-	width: 320px;
-	height: 400px;
-	overflow: hidden;
-	padding-right: 50px;
-}
-.jdjm .C .content{
     width: 320px;
-	height: 90px;
-	position: relative;
-	z-index: 5;
-	top: -90px;
-	left: 0;
-	background-color: rgba(0,0,0,0.75);
+    height: 400px;
+    overflow: hidden;
+    padding-right: 50px;
 }
-.jdjm .C .content dl{
+
+.jdjm .C .content {
+    width: 320px;
+    height: 90px;
+    position: relative;
+    z-index: 5;
+    top: -90px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.jdjm .C .content dl {
     width: 290px;
-	height: 65px;
-	padding-left: 15px;
-	padding-top: 5px;
+    height: 65px;
+    padding-left: 15px;
+    padding-top: 5px;
 }
-.jdjm .C .content dl dd{
-	line-height: 20px;
+
+.jdjm .C .content dl dd {
+    line-height: 20px;
     font-size: 12px;
     text-indent: 2em;
     color: #CCC;
 
 }
-.jdjm .C .content dl dt{
+
+.jdjm .C .content dl dt {
     height: 30px;
-	line-height: 30px;
-	font-size: 15px;
-	font-weight: bold;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
 }
-.jdjm .C .content dt a{
+
+.jdjm .C .content dt a {
     color: white;
 }
-.jdjm .C .content dt a:hover{
+
+.jdjm .C .content dt a:hover {
     padding-left: 2px;
 }
+
+.jdjm img {
+    display: block;
+}
+
 /* 越剧知识 */
-.yjzs{
+.yjzs {
     float: left;
-	width: 360px;
-	height: 400px;
-	overflow: hidden;
-	padding-right: 50px;
+    width: 360px;
+    height: 400px;
+    overflow: hidden;
+    padding-right: 50px;
 }
+
+.yjzs .C dl {
+    width: 340px;
+    height: 145px;
+    border-left: solid 3px #C18D46;
+    padding-left: 15px;
+}
+
+.yjzs .C dl dt a {
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.yjzs .C dl dt a:hover {
+    padding-left: 2px;
+    color: #C18D46;
+}
+
+.yjzs .C dd {
+    text-indent: 2em;
+    width: 340px;
+    height: 104px;
+    overflow: hidden;
+    padding-top: 6px;
+    line-height: 22px;
+    font-size: 13px;
+    color: #999;
+}
+
+.yjzs .C ul {
+    width: 360px;
+    height: 180px;
+    padding-top: 9px;
+    margin-top: 15px;
+    border-top: solid 1px #E5E5E5;
+}
+
+.yjzs .C ul li {
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.yjzs .C ul li a {
+    width: 340px;
+    height: 30px;
+    padding-left: 18px;
+    background: url(../images/libg.png) no-repeat 2px 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+.yjzs .C ul li a:hover {
+    padding-left: 20px;
+    background: url(../images/libg.png) no-repeat 4px 12px;
+    color: #C18D46;
+}
+
 /* 越剧动态 */
-.yjdt{
+.yjdt {
     float: left;
-	width: 320px;
-	height: 400px;
-	overflow: hidden;
+    width: 320px;
+    height: 400px;
+    overflow: hidden;
 }
-.yjdt .C .TT,.EE{
-    float: left;
-	width: 320px;
-	height: 15px;
-	overflow: hidden;
-	background: url(../images/ConT.png) no-repeat;
+
+.yjdt .C .TT,
+.yjdt .C .EE {
+    width: 320px;
+    height: 15px;
+    overflow: hidden;
+    background: url(../images/ConT.png) no-repeat;
 }
-.yjdt .C .EE{
-	background: url(../images/ConE.png) no-repeat;
+
+.yjdt .C .EE {
+    background: url(../images/ConE.png) no-repeat;
 }
-.yjdt .C .MM{
-    float: left;
-	width: 320px;
-	height: 320px;
+
+.yjdt .C .MM {
+    width: 320px;
+    height: 320px;
     overflow: hidden;
     background: url(../images/ConM.png) repeat-y;
 }
+
+.yjdt .C .MM ul {
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+.yjdt .C .MM ul li {
+    width: 250px;
+    height: 130px;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    background: url(../images/Con1.png) no-repeat 0px 19px;
+}
+
+.yjdt .C .MM ul li .title a {
+    width: 250px;
+    height: 52px;
+    padding-left: 0px;
+    overflow: hidden;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.yjdt .C .MM ul li .title a:hover {
+    width: 250px;
+    height: 52px;
+    padding-left: 0px;
+    color: #C18D46;
+}
+
+.yjdt .C .MM ul li .content {
+    text-indent: 2em;
+    width: 250px;
+    height: 72px;
+    overflow: hidden;
+    line-height: 24px;
+    font-size: 13px;
+    color: #999;
+}
+
+.yjdt .C .MM .BorderB1 {
+    border-bottom: solid 1px #E5E5E5;
+    margin-bottom: 8px;
+}
+
 /* 名家风采 容器 背景 */
-.C3Out{
+.C3Out {
     background-color: #F3F3F3;
-	height: 580px;
-	padding-top: 50px;
+    height: 580px;
+    padding-top: 50px;
 }
+
 /* 越剧文献 */
-.yjwx{
+.yjwx {
     float: left;
-	width: 320px;
-	height: 530px;
-	overflow: hidden;
+    width: 320px;
+    height: 530px;
+    overflow: hidden;
 }
+
 /* 名家风采 */
-.mjfc{
+.mjfc {
     float: left;
-	width: 730px;
-	height: 530px;
-	overflow: hidden;
-	padding-left: 50px;
+    width: 730px;
+    height: 530px;
+    overflow: hidden;
+    padding-left: 50px;
 }
+
 /* 视频赏析 容器 背景 */
-.C4Out{
+.C4Out {
     background: url(../images/VedioBg.jpg) top center no-repeat;
     margin-bottom: 50px;
 }
-.C4{
+
+.C4 {
     padding-top: 330px;
     height: 660px;
     position: relative;
 }
-.C4 ul{
+
+.C4 ul {
     width: 1120px;
-	height: 645px;
-	overflow: hidden;
+    height: 645px;
+    overflow: hidden;
 }
-.C4 ul li{
+
+.C4 ul li {
     float: left;
-	width: 260px;
-	height: 195px;
-	overflow: hidden;
-	padding-right: 20px;
-	padding-bottom: 20px;
+    width: 260px;
+    height: 195px;
+    overflow: hidden;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
-.C4 ul li.liBig{
+
+.C4 ul li.liBig {
     position: relative;
     width: 540px;
-	height: 410px;
+    height: 410px;
 }
-.C4 ul li a{
+
+.C4 ul li a {
     position: relative;
 }
-.C4 ul li a img.pic{
-    width:260px;
-    height:195px;
+
+.C4 ul li a img.pic {
+    width: 260px;
+    height: 195px;
     display: block;
 }
-.C4 ul li a img.picBig{
+
+.C4 ul li a img.picBig {
     width: 540px;
-	height: 410px;
+    height: 410px;
     display: block;
 }
-.C4 ul li a p.cover{
+
+.C4 ul li a p.cover {
     transition: .1s linear;
 }
-.C4 ul li a:hover p.cover{
+
+.C4 ul li a:hover p.cover {
     text-indent: 13px;
 }
 
-.C4 ul li a p.cover{
+.C4 ul li a p.cover {
     color: white;
     position: relative;
     background: url(../images/Cover.png);
@@ -161,7 +299,8 @@
     font-size: 15px;
     font-weight: bold;
 }
-.C4 ul li a p.coverBig{
+
+.C4 ul li a p.coverBig {
     position: relative;
     background: url(../images/CoverB.png);
     height: 80px;
@@ -170,22 +309,25 @@
     font-size: 18px;
     width: 540px;
 }
-.More{
+
+.More {
     height: 50px;
 }
+
 .More a {
     margin: 0 auto;
-	width: 298px;
-	height: 48px;
-	display: block;
-	border: solid 1px #DDD;
-	border-radius: 50px;
-	background: #F4F3F0;
-	text-align: center;
-	line-height: 48px;
-	font-size: 17px;
+    width: 298px;
+    height: 48px;
+    display: block;
+    border: solid 1px #DDD;
+    border-radius: 50px;
+    background: #F4F3F0;
+    text-align: center;
+    line-height: 48px;
+    font-size: 17px;
 }
+
 .More a:hover {
-	background: #FFF;
+    background: #FFF;
     color: #C18D46;
 }

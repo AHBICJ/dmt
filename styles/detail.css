@@ -1,5 +1,5 @@
 @import url("base.css");
-@import url("introduction.css");
+@import url("intro.css");
 
 .leftcon {
     float: left;
@@ -15,8 +15,35 @@
 .rightcon{
     float: right;
     width: 320px;
-    height: 600px;
-    background: #C18D46;
 }
 
+/* 越剧动态 */
+.sfhd {
+    float: left;
+    width: 320px;
+    overflow: hidden;
+}
+
+.sfhd .C .TT,
+.sfhd .C .EE {
+    width: 320px;
+    height: 15px;
+    overflow: hidden;
+    background: url(../images/ConT.png) no-repeat;
+}
+
+.sfhd .C .EE {
+    background: url(../images/ConE.png) no-repeat;
+}
+
+.sfhd .C .MM {
+    width: 280px;
+    padding: 10px 20px;
+    overflow: hidden;
+    background: url(../images/ConM.png) repeat-y;
+}
+
+.return a:hover{
+    color: #C18D46;
+}
 

@@ -48,8 +48,9 @@
 	padding: 15px 10px 80px;
 }
 
-.content p{
-    font-family: 'SourceHanSerifSC-Regular';
+.contentArea .content p{
+    /* font-family: 'SourceHanSerifSC-Regular'; */
+
     text-indent: 2em;
     line-height: 1.5;
     font-size: 16px;
@@ -75,9 +76,113 @@
 	border-bottom: dotted 1px #CCC;
 }
 
-.content {
+.contentArea .content {
 	padding-top: 20px;
 	font-size: 15px;
 	line-height: 28px;
     color: #444;
+}
+
+
+.sfhd .singleOption {
+    float: left;
+    position: relative;
+    line-height: 24px;
+    padding: 5px 15px 5px 0;
+}
+.sfhd h3{
+    clear: both;
+}
+
+.singleOption input[type="radio"] {
+    width: 20px;
+    height: 16px;
+    opacity: 0;
+}
+
+.singleOption label {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #999;
+}
+
+.singleOption input[type="radio"]:checked+label {
+    background-color: rgb(240, 176, 86);
+    border: 1px solid rgb(240, 176, 86);
+}
+
+
+.singleOption input[type="radio"]:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 8px;
+    top: 2px;
+    left: 5px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+.sfhd .multipleOption {
+    position: relative;
+    line-height: 24px;
+    padding: 5px 15px 0 0;
+}
+
+.multipleOption input[type="checkbox"] {
+    width: 20px;
+    height: 16px;
+    opacity: 0;
+}
+
+.multipleOption label {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+}
+
+.multipleOption input[type="checkbox"]:checked+label {
+    background-color: rgb(240, 176, 86);
+    border: 1px solid rgb(240, 176, 86);
+}
+
+
+.multipleOption input[type="checkbox"]:checked+label::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 8px;
+    top: 2px;
+    left: 5px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+}
+input[type="submit"]{
+    background:rgb(240, 176, 86);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: #fff 1px solid;
+    margin: 5px 0;
+}
+input[type="submit"]:hover{
+    background:rgb(250, 192, 110);
+}
+
+input[type="submit"]:active{
+    background:rgb(228, 173, 95);
 }
