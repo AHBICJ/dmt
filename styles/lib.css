@@ -1,3 +1,94 @@
 @import url("base.css");
-@import url("intro.css");
-@import url("detail.css");
+
+
+.leftcon{
+    width: 370px;
+    float: left;
+
+}
+.rightcon{
+    width: 680px;
+    float: right;
+}
+
+.BK370 .TT{
+    height: 30px;
+    width: 370px;
+    background: url(/images/bk/BKT370_30.png) no-repeat;
+}
+.BK370 .MM{
+    background: url(/images/bk/BKM370_5.png);}
+.BK370 .BB{
+    height: 30px;
+    width: 370px;
+    background: url(/images/bk/BKB370_30.png) no-repeat;
+}
+
+.BK680 .TT{
+    height: 30px;
+    width: 680px;
+    background: url(/images/bk/BKT680_30.png) no-repeat;
+}
+.BK680 .MM{
+    width: 620px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM680_5.png);
+}
+.BK680 .BB{
+    height: 30px;
+    width: 680px;
+    background: url(/images/bk/BKB680_30.png) no-repeat;
+}
+
+
+
+.container {
+    height: 500px;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.tab {
+    width: 33%;
+    height: 48px;
+    background-color: blanchedalmond;
+    float: left;
+    border: 1px solid black;
+}
+.middle{
+    border-left: none;
+    border-right: none;
+}
+
+.active {
+    border-bottom: none;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 450px;
+    background-color: antiquewhite;
+}
+
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.T {
+    height: 30px;
+    padding-bottom: 0px;
+}
+.PD15{
+    padding-bottom: 15px;
+}
+
+.main{
+    padding-bottom: 40px;
+}
