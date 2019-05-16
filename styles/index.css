@@ -233,7 +233,7 @@
 /* 视频赏析 容器 背景 */
 .C4Out {
     background: url(../images/VedioBg.jpg) top center no-repeat;
-    margin-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .C4 {
