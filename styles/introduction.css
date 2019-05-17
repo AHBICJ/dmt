@@ -1,15 +1,11 @@
 @import url("base.css");
-@import url("intro.css");
 @import url("detail.css");
 .con{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-.leftcon{
-    padding: 15px 15px 80px;
-    margin-right: 10px;
-}
+
 .yjdt{
     padding: 15px;
     padding-left: 0;
