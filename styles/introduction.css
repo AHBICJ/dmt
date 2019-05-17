@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 .leftcon{
-    padding: 15px 15px 80px;  
+    padding: 15px 15px 80px;
     margin-right: 10px;
 }
 .yjdt{
@@ -47,7 +47,7 @@
     padding-right: 5px;
 }
 .contentArea .content {
-	
+
 	font-size: 15px;
 	line-height: 28px;
     color: #444;
@@ -100,72 +100,4 @@
     width: 320px;
     height: 400px;
     overflow: hidden;
-}
-
-.yjdt .C .TT,
-.yjdt .C .EE {
-    width: 320px;
-    height: 15px;
-    overflow: hidden;
-    background: url(../images/ConT.png) no-repeat;
-}
-
-.yjdt .C .EE {
-    background: url(../images/ConE.png) no-repeat;
-}
-
-.yjdt .C .MM {
-    width: 320px;
-    height: 320px;
-    overflow: hidden;
-    background: url(../images/ConM.png) repeat-y;
-}
-
-.yjdt .C .MM ul {
-    width: 280px;
-    height: 300px;
-    overflow: hidden;
-    padding-left: 20px;
-}
-
-.yjdt .C .MM ul li {
-    width: 250px;
-    height: 130px;
-    overflow: hidden;
-    padding-left: 30px;
-    padding-top: 13px;
-    padding-bottom: 8px;
-    background: url(../images/Con1.png) no-repeat 0px 19px;
-}
-
-.yjdt .C .MM ul li .title a {
-    width: 250px;
-    height: 52px;
-    padding-left: 0px;
-    overflow: hidden;
-    line-height: 26px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.yjdt .C .MM ul li .title a:hover {
-    width: 250px;
-    height: 52px;
-    padding-left: 0px;
-    color: #C18D46;
-}
-
-.yjdt .C .MM ul li .content {
-    text-indent: 2em;
-    width: 250px;
-    height: 72px;
-    overflow: hidden;
-    line-height: 24px;
-    font-size: 13px;
-    color: #999;
-}
-
-.yjdt .C .MM .BorderB1 {
-    border-bottom: solid 1px #E5E5E5;
-    margin-bottom: 8px;
 }
