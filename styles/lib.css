@@ -1,4 +1,5 @@
 @import url("base.css");
+@import url(pagination.css);
 *{
     font-size: 15px;
 }
@@ -150,4 +151,38 @@
 }
 .con-list li:hover{
     background-image: url("../images/lib/part_ul_li_hover.png");
+}
+
+
+.classicrep{
+    width: 100%;
+}
+.classicrep-bot{
+    text-align: center;
+}
+.classic-con-con{
+    display: none;
+}
+.classic-pics{
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.classic-pics-con{
+    margin: 10px auto;
+    text-align: center;
+}
+.classic-pics a:hover{
+    color: #dfb162;
+    padding: 0 15px !important;
+}
+.classic-pics img{
+    width: 200px;
+    height: 125px;
+    display: block;
+    margin-bottom: 10px;
+}
+.pagination{
+    margin: 15px auto 0px;
 }
