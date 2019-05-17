@@ -10,7 +10,10 @@
 }
 .hiddengroup{
     overflow: auto;
-    height: 400px;
+    height: 430px;
+    border-bottom: 1px dotted rgb(63, 61, 61);
+    /* padding: 20px 0; */
+    margin-bottom: 10px;
 }
 .hiddengroup::-webkit-scrollbar { width: 0 !important }
 .img-text-group img{
@@ -52,4 +55,7 @@
 
 .vcontent img {
     max-height: 300px;
+}
+.return{
+    margin-top: 20px;
 }
