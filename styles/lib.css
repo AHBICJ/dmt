@@ -12,6 +12,9 @@
     float: right;
 }
 
+.mainOut{
+    background:url(../images/lib/libBG.jpg) no-repeat bottom center;
+}
 .container {
     height: 400px;
     width: 670px;
