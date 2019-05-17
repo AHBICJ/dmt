@@ -1,5 +1,4 @@
 @import url("base.css");
-@import url("intro.css");
 /* 主体 */
 
 /* 经典剧目 容器 */
@@ -7,203 +6,17 @@
     margin-bottom: 40px;
 }
 
-/* 经典剧目 */
-.jdjm {
+/*越剧博览*/
+.yjbl{
+    width: 730px;
     float: left;
-    width: 320px;
-    height: 400px;
-    overflow: hidden;
-    padding-right: 50px;
 }
-
-.jdjm .C .content {
-    width: 320px;
-    height: 90px;
-    position: relative;
-    z-index: 5;
-    top: -90px;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.jdjm .C .content dl {
-    width: 290px;
-    height: 65px;
-    padding-left: 15px;
-    padding-top: 5px;
-}
-
-.jdjm .C .content dl dd {
-    line-height: 20px;
-    font-size: 12px;
-    text-indent: 2em;
-    color: #CCC;
-
-}
-
-.jdjm .C .content dl dt {
-    height: 30px;
-    line-height: 30px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.jdjm .C .content dt a {
-    color: white;
-}
-
-.jdjm .C .content dt a:hover {
-    padding-left: 2px;
-}
-
-.jdjm img {
-    display: block;
-}
-
-/* 越剧知识 */
-.yjzs {
-    float: left;
-    width: 360px;
-    height: 400px;
-    overflow: hidden;
-    padding-right: 50px;
-}
-
-.yjzs .C dl {
-    width: 340px;
-    height: 145px;
-    border-left: solid 3px #C18D46;
-    padding-left: 15px;
-}
-
-.yjzs .C dl dt a {
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.yjzs .C dl dt a:hover {
-    padding-left: 2px;
-    color: #C18D46;
-}
-
-.yjzs .C dd {
-    text-indent: 2em;
-    width: 340px;
-    height: 104px;
-    overflow: hidden;
-    padding-top: 6px;
-    line-height: 22px;
-    font-size: 13px;
-    color: #999;
-}
-
-.yjzs .C ul {
-    width: 360px;
-    height: 180px;
-    padding-top: 9px;
-    margin-top: 15px;
-    border-top: solid 1px #E5E5E5;
-}
-
-.yjzs .C ul li {
-    height: 30px;
-    overflow: hidden;
-    line-height: 30px;
-    font-size: 14px;
-}
-
-.yjzs .C ul li a {
-    width: 340px;
-    height: 30px;
-    padding-left: 18px;
-    background: url(../images/libg.png) no-repeat 2px 12px;
-    overflow: hidden;
-    white-space: nowrap;
-    display: block;
-    text-overflow: ellipsis;
-}
-
-.yjzs .C ul li a:hover {
-    padding-left: 20px;
-    background: url(../images/libg.png) no-repeat 4px 12px;
-    color: #C18D46;
-}
-
 /* 越剧动态 */
 .yjdt {
-    float: left;
+    float: right;
     width: 320px;
     height: 400px;
     overflow: hidden;
-}
-
-.yjdt .C .TT,
-.yjdt .C .EE {
-    width: 320px;
-    height: 15px;
-    overflow: hidden;
-    background: url(../images/ConT.png) no-repeat;
-}
-
-.yjdt .C .EE {
-    background: url(../images/ConE.png) no-repeat;
-}
-
-.yjdt .C .MM {
-    width: 320px;
-    height: 320px;
-    overflow: hidden;
-    background: url(../images/ConM.png) repeat-y;
-}
-
-.yjdt .C .MM ul {
-    width: 280px;
-    height: 300px;
-    overflow: hidden;
-    padding-left: 20px;
-}
-
-.yjdt .C .MM ul li {
-    width: 250px;
-    height: 130px;
-    overflow: hidden;
-    padding-left: 30px;
-    padding-top: 13px;
-    padding-bottom: 8px;
-    background: url(../images/Con1.png) no-repeat 0px 19px;
-}
-
-.yjdt .C .MM ul li .title a {
-    width: 250px;
-    height: 52px;
-    padding-left: 0px;
-    overflow: hidden;
-    line-height: 26px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.yjdt .C .MM ul li .title a:hover {
-    width: 250px;
-    height: 52px;
-    padding-left: 0px;
-    color: #C18D46;
-}
-
-.yjdt .C .MM ul li .content {
-    text-indent: 2em;
-    width: 250px;
-    height: 72px;
-    overflow: hidden;
-    line-height: 24px;
-    font-size: 13px;
-    color: #999;
-}
-
-.yjdt .C .MM .BorderB1 {
-    border-bottom: solid 1px #E5E5E5;
-    margin-bottom: 8px;
 }
 
 /* 名家风采 容器 背景 */
