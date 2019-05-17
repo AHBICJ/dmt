@@ -1,0 +1,55 @@
+.bigleft {
+    overflow: hidden;
+    float: left;
+    width: 700px;
+    height: auto;
+}
+
+.left {
+    overflow: hidden;
+    float: left;
+    width: 700px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.left img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.bigright {
+    width: 370px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+.right {
+    width: 370px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.right img {
+    width: 280px;
+    height: 350px;
+    display: block;
+    margin: 10px auto;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+/* main已经结束 */
+
+

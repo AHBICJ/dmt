@@ -1,0 +1,153 @@
+.bigleft {
+    overflow: hidden;
+    float: left;
+    width: 730px;
+    height: auto;
+}
+
+.left {
+    overflow: hidden;
+    float: left;
+    width: 730px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.left img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.bigright {
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+.right {
+    margin-top: 50px;
+    width: 320px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.right img {
+    width: 280px;
+    height: 350px;
+    display: block;
+    margin: 10px auto;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.text {
+    display: block;
+    margin-top: 20px;
+    width: 90%;
+    height: 25px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.remark {
+    height: 60px;
+    line-height: 16px;
+}
+
+input[type='submit'] {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    height: 50px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    width: 80%;
+    padding: 6px 12px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    margin-left: 20px;
+}
+
+input[type='submit']:hover {
+    color: white;
+    background-color: #DDAC58;
+}
+
+.mytext p {
+    text-indent: 0em;
+}
+
+.BK320 {
+    width: 320px;
+    height: auto;
+}
+
+.BK320 .TT {
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKT320_30.png) no-repeat;
+}
+
+.BK320 .MM {
+    width: 320px;
+    background: url(/images/bk/BKM320_5.png);
+}
+
+.BK320 .BB {
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKB320_30.png) no-repeat;
+}
+
+.mytext {
+    width: 240px;
+    padding: 0 10px;
+    height: auto;
+}
+
+.T {
+    border-bottom: solid 4px #C18D46;
+    margin-bottom: 15px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(193, 141, 70);
+}
+
+.info {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: #777;
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-bottom: dotted 1px #CCC;
+    margin-bottom: 20px;
+}
+.mytop{
+    position: fixed;
+    top: 0;
+    left: 1180px;
+}
