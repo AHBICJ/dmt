@@ -84,6 +84,15 @@ body {
     background: url(/images/bk/BKB730_30.png) no-repeat;
 }
 
+.haveWhiteBG .TT{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.haveWhiteBG .MM{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.haveWhiteBG .BB{
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
 .bigCon {
     width: 100%;
