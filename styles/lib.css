@@ -1,14 +1,29 @@
 @import url("base.css");
-
+*{
+    font-size: 15px;
+}
 
 .leftcon{
-    width: 370px;
     float: left;
 
 }
 .rightcon{
-    width: 680px;
     float: right;
+}
+
+.BK320 .TT{
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKT320_30.png) no-repeat;
+}
+.BK320 .MM{
+    width: 260px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM320_5.png);}
+.BK320 .BB{
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKB320_30.png) no-repeat;
 }
 
 .BK370 .TT{
@@ -17,6 +32,8 @@
     background: url(/images/bk/BKT370_30.png) no-repeat;
 }
 .BK370 .MM{
+    width: 370px;
+    padding: 0 30px;
     background: url(/images/bk/BKM370_5.png);}
 .BK370 .BB{
     height: 30px;
@@ -38,6 +55,22 @@
     height: 30px;
     width: 680px;
     background: url(/images/bk/BKB680_30.png) no-repeat;
+}
+
+.BK730 .TT{
+    height: 30px;
+    width: 730px;
+    background: url(/images/bk/BKT730_30.png) no-repeat;
+}
+.BK730 .MM{
+    width: 670px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM730_5.png);
+}
+.BK730 .BB{
+    height: 30px;
+    width: 730px;
+    background: url(/images/bk/BKB730_30.png) no-repeat;
 }
 
 
@@ -91,4 +124,17 @@
 
 .main{
     padding-bottom: 40px;
+}
+
+
+.yjzs .MM ul li a {
+	width: 245px;
+    height: 30px;
+    line-height: 30px;
+	padding-left: 15px;
+	background: url(/images/libg.png) no-repeat 2px 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+	text-overflow: ellipsis;
 }
