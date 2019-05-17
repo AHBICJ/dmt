@@ -133,24 +133,24 @@
 .clear{clear:both; height: 0; line-height: 0; font-size: 0}
 .con-list li {
     width: 134px;
-    height:43px;
+    height:40px;
     text-align: center;
-    background: url("../images/lib/part_ul_li.png") no-repeat center;
+    background: url("../images/lib/li.png") no-repeat center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .con-list li a {
     width: 134px;
-    height: 43px;
-    line-height: 43px;
+    height: 40px;
+    line-height: 40px;
     display: block;
     font-weight: bold;
     font-size: 16px;
     font-family: "宋体";
 }
 .con-list li:hover{
-    background-image: url("../images/lib/part_ul_li_hover.png");
+    background-image: url("../images/lib/li_hover.png");
 }
 
 
