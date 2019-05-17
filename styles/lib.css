@@ -156,6 +156,12 @@
     background-image: url("../images/lib/li_hover.png");
 }
 
+.changqiang  p{
+    line-height: 30px;
+}
+.changqiang  hr {
+    margin: 25px 0 10px;
+}
 
 .classicrep{
     width: 100%;
@@ -189,3 +195,4 @@
 .pagination{
     margin: 15px auto 0px;
 }
+
