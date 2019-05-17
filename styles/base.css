@@ -15,13 +15,75 @@ li {
 
 body {
     height: 100%;
-
     background: url(../images/TopBG.jpg) top center no-repeat;
-    /* background-attachment: fixed; */
     font: normal 14px "微软雅黑", Arial, Helvetica, sans-serif;
     color: #4F4742;
 
 }
+
+/* 边框类 */
+.BK320 .TT{
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKT320_30.png) no-repeat;
+}
+.BK320 .MM{
+    width: 260px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM320_5.png);}
+.BK320 .BB{
+    height: 30px;
+    width: 320px;
+    background: url(/images/bk/BKB320_30.png) no-repeat;
+}
+
+.BK370 .TT{
+    height: 30px;
+    width: 370px;
+    background: url(/images/bk/BKT370_30.png) no-repeat;
+}
+.BK370 .MM{
+    width: 370px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM370_5.png);}
+.BK370 .BB{
+    height: 30px;
+    width: 370px;
+    background: url(/images/bk/BKB370_30.png) no-repeat;
+}
+
+.BK680 .TT{
+    height: 30px;
+    width: 680px;
+    background: url(/images/bk/BKT680_30.png) no-repeat;
+}
+.BK680 .MM{
+    width: 620px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM680_5.png);
+}
+.BK680 .BB{
+    height: 30px;
+    width: 680px;
+    background: url(/images/bk/BKB680_30.png) no-repeat;
+}
+
+.BK730 .TT{
+    height: 30px;
+    width: 730px;
+    background: url(/images/bk/BKT730_30.png) no-repeat;
+}
+.BK730 .MM{
+    width: 670px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM730_5.png);
+}
+.BK730 .BB{
+    height: 30px;
+    width: 730px;
+    background: url(/images/bk/BKB730_30.png) no-repeat;
+}
+
 
 .bigCon {
     width: 100%;
@@ -240,7 +302,6 @@ a {
 
 .T {
     height: 30px;
-    padding-bottom: 15px;
 }
 
 .T h2 {

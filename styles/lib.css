@@ -11,90 +11,39 @@
     float: right;
 }
 
-.BK320 .TT{
-    height: 30px;
-    width: 320px;
-    background: url(/images/bk/BKT320_30.png) no-repeat;
-}
-.BK320 .MM{
-    width: 260px;
-    padding: 0 30px;
-    background: url(/images/bk/BKM320_5.png);}
-.BK320 .BB{
-    height: 30px;
-    width: 320px;
-    background: url(/images/bk/BKB320_30.png) no-repeat;
-}
-
-.BK370 .TT{
-    height: 30px;
-    width: 370px;
-    background: url(/images/bk/BKT370_30.png) no-repeat;
-}
-.BK370 .MM{
-    width: 370px;
-    padding: 0 30px;
-    background: url(/images/bk/BKM370_5.png);}
-.BK370 .BB{
-    height: 30px;
-    width: 370px;
-    background: url(/images/bk/BKB370_30.png) no-repeat;
-}
-
-.BK680 .TT{
-    height: 30px;
-    width: 680px;
-    background: url(/images/bk/BKT680_30.png) no-repeat;
-}
-.BK680 .MM{
-    width: 620px;
-    padding: 0 30px;
-    background: url(/images/bk/BKM680_5.png);
-}
-.BK680 .BB{
-    height: 30px;
-    width: 680px;
-    background: url(/images/bk/BKB680_30.png) no-repeat;
-}
-
-.BK730 .TT{
-    height: 30px;
-    width: 730px;
-    background: url(/images/bk/BKT730_30.png) no-repeat;
-}
-.BK730 .MM{
-    width: 670px;
-    padding: 0 30px;
-    background: url(/images/bk/BKM730_5.png);
-}
-.BK730 .BB{
-    height: 30px;
-    width: 730px;
-    background: url(/images/bk/BKB730_30.png) no-repeat;
-}
-
-
-
 .container {
-    height: 500px;
-    background-color: aquamarine;
+    height: 400px;
+    width: 670px;
     position: relative;
 }
 
+/*三个按钮*/
 .tab {
-    width: 33%;
-    height: 48px;
-    background-color: blanchedalmond;
-    float: left;
-    border: 1px solid black;
-}
-.middle{
-    border-left: none;
-    border-right: none;
+    margin: 0;
+    display: inline-block;
+    width: 220px;
+    height: 40px;
 }
 
-.active {
-    border-bottom: none;
+/*三个按钮*/
+.cqbk{
+    background: url(../images/lib/cqbk.png) no-repeat;
+}
+.fsbk{
+    background: url(../images/lib/fsbk.png) no-repeat;
+}
+.lpbk{
+    background: url(../images/lib/lpbk.png) no-repeat;
+}
+/*三个按钮 激活*/
+.cqbk.active {
+    background: url(../images/lib/cqbk_a.png) no-repeat;
+}
+.fsbk.active{
+    background: url(../images/lib/fsbk_a.png) no-repeat;
+}
+.lpbk.active{
+    background: url(../images/lib/lpbk_a.png) no-repeat;
 }
 
 .content {
@@ -102,10 +51,8 @@
     position: absolute;
     top: 50px;
     width: 100%;
-    height: 450px;
-    background-color: antiquewhite;
+    height: 350px;
 }
-
 
 .show{
     display: block;
@@ -114,10 +61,6 @@
     display: none;
 }
 
-.T {
-    height: 30px;
-    padding-bottom: 0px;
-}
 .PD15{
     padding-bottom: 15px;
 }
@@ -126,7 +69,22 @@
     padding-bottom: 40px;
 }
 
+/* 越剧介绍 */
+.yjjs .MM p{
+    text-indent: 2em;
+    line-height: 26px;
+}
 
+.yjjs .MM p span a{
+    padding-left: 5px;
+    color: #999;
+}
+.yjjs .MM p span a:hover{
+    padding-left: 10px;
+    color: #dfb162;
+}
+
+/* 越剧知识 */
 .yjzs .MM ul li a {
 	width: 245px;
     height: 30px;
@@ -137,4 +95,59 @@
 	white-space: nowrap;
 	display: block;
 	text-overflow: ellipsis;
+}
+
+.yjzs .MM ul li a:hover {
+	padding-left: 20px;
+	background: url(../images/libg.png) no-repeat 4px 12px;
+	color: #dfb162;
+}
+
+
+/* 越剧流派 */
+.content hr{
+    color: #eee;
+    opacity: 0.5;
+}
+.con-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.con-top img{
+    max-height: 140px;
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.con-top p{
+    line-height: 26px;
+    text-indent: 2em;
+}
+.con-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+.con-list li {
+    width: 134px;
+    height:43px;
+    text-align: center;
+    background: url("../images/lib/part_ul_li.png") no-repeat center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.con-list li a {
+    width: 134px;
+    height: 43px;
+    line-height: 43px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "宋体";
+}
+.con-list li:hover{
+    background-image: url("../images/lib/part_ul_li_hover.png");
 }

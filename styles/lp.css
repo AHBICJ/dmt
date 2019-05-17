@@ -1,0 +1,110 @@
+@charset "utf-8";
+@import url(detail.css);
+@import url(pagination.css);
+
+.lp-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+.lp-list li {
+    width: 140px;
+    height: 43px;
+    text-align: center;
+    background: url("../images/lib/part_ul_li.png") no-repeat center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lp-list li a {
+    width: 140px;
+    height: 43px;
+    line-height: 43px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "宋体";
+}
+.lp-list li:hover{
+    background-image: url("../images/lib/part_ul_li_hover.png");
+}
+.maincon {
+    font-family: 'SourceHanSerifSC-Regular';
+    font-size: 15px;
+    line-height: 28px;
+    color: #444;
+    padding: 10px;
+}
+
+.maincon p {
+    text-indent: 2em;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+
+}
+
+.maincon .title {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C18D46;
+    font-size: 30px;
+}
+.title span{
+    font-size: 20px;
+    font-weight: normal;
+}
+.maincon .info {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: #777;
+    padding-bottom: 10px;
+    font-size: 12px;
+	border-bottom: dotted 1px #CCC;
+}
+.maincon h2{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #C18D46;
+}
+.maincon h3{
+    padding-bottom: 5px;
+    border-bottom: #999 dotted 1px;
+    padding-left: 10px;
+}
+.maincon .avat{
+    margin-top: 10px;
+    float: right;
+    margin-left: 10px;
+    border:2px solid rgb(236, 145, 15);
+    width: 150px;
+    height: 180px;
+
+}
+.outer-top{
+    height: 30px;
+    width: 320px;
+    background: url("../images/bk/BKT320_30.png") no-repeat;
+    background-color: #faf8e9;
+}
+.outer-con{
+    width: 300px;
+    padding: 10px;
+    background: url("../images/bk/BKM320_5.png");
+    background-color: #faf8e9;
+
+}
+.outer-bot{
+    width: 320px;
+    height: 30px;
+    background: url("../images/bk/BKB320_30.png") no-repeat;
+    background-color: #faf8e9;
+}
