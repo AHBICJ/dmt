@@ -1,9 +1,13 @@
 @import url("base.css");
 
+/* 所有内容之后 加上40px的填充 */
+.main{
+    padding-bottom: 40px!important;
+}
+/* 左侧框 */
 .leftcon {
     float: left;
     width: 730px;
-    margin-right: 50px;
 }
 
 .leftcon .T {
@@ -12,40 +16,115 @@
     margin-bottom: 15px;
 }
 
+/* 右侧框*/
 .rightcon .T{
     padding-bottom: 10px;
 }
+
 .rightcon{
     float: right;
     width: 320px;
 }
 
-/* 越剧动态 */
-.sfhd {
-    float: left;
-    width: 320px;
-    overflow: hidden;
+/* 左侧内容 格式*/
+.maincon {
+    font-family: 'SourceHanSerifSC-Regular';
+    font-size: 15px;
+    line-height: 28px;
+    color: #444;
+    padding: 10px;
 }
 
-.sfhd .C .TT,
-.sfhd .C .EE {
-    width: 320px;
-    height: 15px;
-    overflow: hidden;
-    background: url(../images/ConT.png) no-repeat;
+/* 包括标题 */
+.maincon .title {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C18D46;
+    font-size: 30px;
+}
+/* 标题 */
+.title span{
+    font-size: 20px;
+    font-weight: normal;
+}
+/* 时间 */
+.maincon .info {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	color: #777;
+    padding-bottom: 10px;
+    font-size: 12px;
+	border-bottom: dotted 1px #CCC;
 }
 
-.sfhd .C .EE {
-    background: url(../images/ConE.png) no-repeat;
+/* 二级标题 */
+.maincon h2{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    border-bottom: #999 dotted 1px;
+    padding-bottom: 10px;
+    color: #C18D46;
+}
+.maincon h3{
+    padding-bottom: 5px;
+    border-bottom: #999 dotted 1px;
+    padding-left: 10px;
+}
+/* 段落 */
+.maincon p {
+    text-indent: 2em;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+
 }
 
-.sfhd .C .MM {
-    width: 280px;
-    padding: 10px 20px;
-    overflow: hidden;
-    background: url(../images/ConM.png) repeat-y;
+/* 为列表着色*/
+.haveColor .TT{
+    background-color: #faf8e9 !important;;
+}
+.haveColor .MM{
+    background-color: #faf8e9 !important;;
+}
+.haveColor .BB{
+    background-color: #faf8e9 !important;;
 }
 
+/* 右侧列表 */
+.listAtRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+.listAtRight li {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background: url("../images/lib/li.png") no-repeat center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.listAtRight li a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "宋体";
+}
+.listAtRight li:hover{
+    background-image: url("../images/lib/li_hover.png");
+}
+
+/* 返回按钮 */
 .return a:hover{
     color: #C18D46;
 }
