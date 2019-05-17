@@ -1,11 +1,26 @@
-@import url("base.css");
+﻿@import url("base.css");
 @import url("intro.css");
 @import url("detail.css");
-
+.con{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.leftcon{
+    padding: 15px 15px 80px;  
+    margin-right: 10px;
+}
+.yjdt{
+    padding: 15px;
+    padding-left: 0;
+}
+.C{
+    padding: 10px;
+}
 .contentArea{
     width: 710px;
 	overflow: hidden;
-	padding: 15px 10px 80px;
+    background-color: white;
 }
 .contentArea .title{
     width: 100%;
@@ -14,7 +29,9 @@
     font-size: 12px;
 	font-size: 25px;
 	font-weight: bold;
-	color: #C18D46;
+    color: #C18D46;
+    /* font-family: "隶书"; */
+    font-size: 30px;
 }
 .contentArea .info {
 	width: 100%;
@@ -25,17 +42,38 @@
     font-size: 12px;
 	border-bottom: dotted 1px #CCC;
 }
-
+.content{
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .contentArea .content {
-	padding-top: 20px;
+	
 	font-size: 15px;
 	line-height: 28px;
     color: #444;
-}
-
-
-.contentArea .content{
     font-family: 'SourceHanSerifSC-Regular';
+}
+.content img{
+    float:right;border: 1px solid #ccc; width:250px;
+    margin-left: 10px;
+    border:2px solid rgb(236, 145, 15);
+    /* box-shadow: 0 0 5px #000; */
+}
+.otherinfo{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.otherinfo-item{
+    display: flex;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-content: center;
+    margin: 15px auto;
+}
+.otherinfo-item>div{
+    line-height: 35px;
+    height: 35px;
+    margin: 0 10px;
 }
 .contentArea .content p{
     text-indent: 2em;
@@ -45,8 +83,12 @@
     margin-bottom: 6px;
 }
 .contentArea h2{
+    /* border-left: 3px solid orange; */
+    margin-bottom: 15px;
+    margin-top: 30px;
+    /* margin-left: -15px; */
+    /* padding-left: 15px; */
     color: #C18D46;
-    padding:10px 0;
 }
 .contentArea h3{
     border-bottom: #999 dotted 1px;
