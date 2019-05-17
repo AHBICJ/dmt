@@ -1,19 +1,15 @@
 @charset "utf-8";
-
 .content video {
     display: block;
     margin: 0 auto;
-}
-
-.con-text {
-    margin-top: 20px;
 }
 .hiddengroup{
     overflow: auto;
     height: 430px;
     border-bottom: 1px dotted rgb(63, 61, 61);
     /* padding: 20px 0; */
-    margin-bottom: 10px;
+    border-top: 1px solid dotted rgb(63, 61, 61);
+    margin-bottom: 30px;
 }
 .hiddengroup::-webkit-scrollbar { width: 0 !important }
 .img-text-group img{
