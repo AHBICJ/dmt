@@ -4,10 +4,12 @@
     <title>越剧-赏析</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <link rel="stylesheet" href="/styles/knowledge.css">
     <link rel="stylesheet" href="../styles/yjsx.css">
+    <link rel="stylesheet" href="../styles/dati.css">
 </head>
 
 <body>
@@ -64,13 +66,16 @@
                         <div class="info">2017-08-03 13:47:00</div>
                         <div class="content">
                             <div class="con-text">
-                            <!-- <a href="https://baike.baidu.com/item/%E7%9B%98%E5%A6%BB%E7%B4%A2%E5%A6%BB"></a> -->
+                                <!-- <a href="https://baike.baidu.com/item/%E7%9B%98%E5%A6%BB%E7%B4%A2%E5%A6%BB"></a> -->
                                 <h2>剧情简介</h2>
-                               <p>奸相梁如龙之子梁玉书游春，其书童捡到一块名贵玉佩，梁玉书遂原地等待失主，得遇少女谢云霞，两人一见倾心。梁玉书将玉佩原物奉还给，谢云霞之侍女一旁接过，惊喜不已。谢云霞感梁玉书君子风采，但碍于男女授受不亲，深施一礼后离去。</p>
-                               <p>梁玉书按捺不住爱慕之意，虽知有所不妥，仍尾随而往，一路来到刘府，得遇师兄刘仁元，方知谢云霞为刘仁元在长江上所救之义妹。梁玉书托刘仁元做媒，欲娶谢云霞为妻。刘仁元向义妹提起求婚之事，盛赞梁玉书虽为相府公子，却待人和善，谢云霞惊闻此言，方知梁玉书之父奸相梁如龙，竟是自己的杀父杀母仇人，痛定思痛，决定斩断情丝，拒绝梁玉书的求婚。</p>
-                               <p>梁玉书思慕谢云霞，屡次求婚不得，犯相思病而奄奄一息。经刘仁元多加斡旋，为救梁玉书一命，更为接近梁如龙可以复仇，谢云霞终究答应了梁玉书的求婚，嫁入梁家，但约定要守孝三年，不得同房。洞房夜，梁玉书对谢云霞百般温存，多加呵护，谢为之所感，却痛家仇，不得不拒以千里。</p>
+                                <p>奸相梁如龙之子梁玉书游春，其书童捡到一块名贵玉佩，梁玉书遂原地等待失主，得遇少女谢云霞，两人一见倾心。梁玉书将玉佩原物奉还给，谢云霞之侍女一旁接过，惊喜不已。谢云霞感梁玉书君子风采，但碍于男女授受不亲，深施一礼后离去。
+                                </p>
+                                <p>梁玉书按捺不住爱慕之意，虽知有所不妥，仍尾随而往，一路来到刘府，得遇师兄刘仁元，方知谢云霞为刘仁元在长江上所救之义妹。梁玉书托刘仁元做媒，欲娶谢云霞为妻。刘仁元向义妹提起求婚之事，盛赞梁玉书虽为相府公子，却待人和善，谢云霞惊闻此言，方知梁玉书之父奸相梁如龙，竟是自己的杀父杀母仇人，痛定思痛，决定斩断情丝，拒绝梁玉书的求婚。
+                                </p>
+                                <p>梁玉书思慕谢云霞，屡次求婚不得，犯相思病而奄奄一息。经刘仁元多加斡旋，为救梁玉书一命，更为接近梁如龙可以复仇，谢云霞终究答应了梁玉书的求婚，嫁入梁家，但约定要守孝三年，不得同房。洞房夜，梁玉书对谢云霞百般温存，多加呵护，谢为之所感，却痛家仇，不得不拒以千里。
+                                </p>
                                 <div style="width: 100%;height: 450px; margin-top: 20px;">
-                                    <iframe width="100%" height="100%" 
+                                    <iframe width="100%" height="100%"
                                         src="http://player.youku.com/embed/XNDE1MDU0NjczNg==?client_id=ffa027a30aeff522&amp;password=&amp;autoplay=true#xkyn.net"
                                         name="iframeId" id="iframeId" frameborder="0" allowfullscreen="true"
                                         scrolling="no"></iframe>
@@ -80,7 +85,7 @@
                                         styleid: '0',
                                         client_id: 'ffa027a30aeff522',
                                         vid: 'XNDE1MDM0NTY0NA==',
-                                        autoplay: true,
+                                        autoplay: false,
                                         show_related: false
                                     });
                                 </script>
@@ -96,7 +101,85 @@
                     <h2>三分互动</h2>
                 </div>
                 <div class="C">
-                    <h1>这个区域用来 用来摆放一些和视频有关系的互动</h1>
+                    <div class="TT"></div>
+                    <div class="MM">
+                        
+                        </script>
+                        <form action="" id="quiz">
+                            <h3>应当认为越剧《梁祝》最初的作者是文人，而不是文人？</h3>
+
+                            <div class="singleOption">
+                                <input type="radio" name="t1" id="t1true" value="true"><label
+                                    for="t1true"><span>正确</span></label>
+                            </div>
+                            <div class="singleOption">
+                                <input type="radio" name="t1" id="t1false" value="false"><label
+                                    for="t1false"><span>错误</span></label>
+                            </div>
+                            <h3>越剧《梁祝》参考了那些书籍？</h3>
+                            <div class="multipleOption">
+                                <input type="checkbox" name="t2" id="t2a" value="a"><label
+                                    for="t2a"></label><span>《梁山伯祝英台》</span>
+                            </div>
+                            <div class="multipleOption">
+                                <input type="checkbox" name="t2" id="t2b" value="b"><label
+                                    for="t2b"></label><span>《柳荫记》</span>
+                            </div>
+                            <div class="multipleOption">
+                                <input type="checkbox" name="t2" id="t2c" value="c"><label
+                                    for="t2c"></label><span>《中国大百科全书·戏曲曲艺》</span>
+                            </div>
+                            <div class="multipleOption">
+                                <input type="checkbox" name="t2" id="t2d" value="d"><label
+                                    for="t2d"></label><span>《梁山伯祝英台夫妇攻书还魂团圆记》</span>
+                            </div>
+                        </form>
+                        <input type="submit" value="提交" id="submit">
+                        <p id="res"></p>
+                        <script>
+                            function formser(formid) {
+                                let form = document.getElementById(formid);
+                                let arr = {};
+                                for (let i = 0; i < form.elements.length; i++) {
+                                    let feled = form.elements[i];
+                                    switch (feled.type) {
+                                        case undefined:
+                                        case 'button':
+                                        case 'file':
+                                        case 'reset':
+                                        case 'submit':
+                                            break;
+                                        case 'checkbox':
+                                        case 'radio':
+                                            if (!feled.checked) {
+                                                break;
+                                            }
+                                            default:
+                                                if (arr[feled.name]) {
+                                                    arr[feled.name] = arr[feled.name] + ',' + feled.value;
+                                                } else {
+                                                    arr[feled.name] = feled.value;
+
+                                                }
+                                    }
+                                }
+                                return arr;
+                            }
+
+                            const sub = document.querySelector('#submit');
+                            sub.addEventListener('click', e => {
+                                let ans = formser("quiz");
+                                // debugger;
+                                // console.log(ans);
+                                if (JSON.stringify(ans) == '{"t1":"false","t2":"a,d"}') {
+                                    document.getElementById('res').innerText = "YES";
+                                } else {
+                                    document.getElementById('res').innerText = "NO";
+                                }
+                            });
+                        </script>
+                    </div>
+                    <div class="EE"></div>
                 </div>
             </div>
 
