@@ -1,14 +1,14 @@
 .bigleft {
     overflow: hidden;
     float: left;
-    width: 700px;
+    width: 680px;
     height: auto;
 }
 
 .left {
     overflow: hidden;
     float: left;
-    width: 700px;
+    width: 680px;
     height: auto;
     margin-bottom: 50px;
 }
@@ -17,7 +17,7 @@
     width: 400px;
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 .bigright {
@@ -32,14 +32,14 @@
     height: auto;
     overflow: hidden;
     float: right;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .right img {
-    width: 280px;
-    height: 350px;
+    width: 250px;
+    height: 300px;
     display: block;
-    margin: 10px auto;
+    margin: 0px auto;
 }
 
 p {
@@ -51,7 +51,8 @@ p {
 }
 
 /* main已经结束 */
-
-.T{
-    margin-bottom: 15px;
+/* 修改东西 */
+.BK370 .MM{
+    width: 310px;
+    padding: 0 30px;
 }
