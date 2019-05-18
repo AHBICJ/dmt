@@ -29,7 +29,7 @@
     width: 120px;
     margin-right: 20px;
     float: left;
-    writing-mode:vertical-lr; 
+    writing-mode:vertical-lr;
     text-align: justify;
 }
 
@@ -48,6 +48,15 @@
 
 .lpbk {
     height: 100px;
+}
+.lpbk a{
+    display: block;
+    height: 100px;
+    width: 180px;
+    background: url(../images/yuan.jpg) no-repeat;
+}
+.lpbk a:hover{
+    background: url(../images/yuan_hover.jpg) no-repeat;
 }
 
 .fzbk {
@@ -70,12 +79,19 @@
     margin-left: 20px;
     width: 120px;
     height: 300px;
-    writing-mode:vertical-lr; 
+    writing-mode:vertical-lr;
 }
-.yjzs a{
-    width: 25px;
+.yjzs ul li a{
+    background: url(../images/libg.png) top center no-repeat;
+    padding-top: 15px;
+    width: 24px;
+    line-height: 24px;
     display: block;
-
+}
+.yjzs ul li a:hover{
+    background: url(../images/libg.png) center 5px no-repeat;
+    padding-top: 20px;
+    color: #dfb162;
 }
 
 /* 视频赏析 容器 背景 */
