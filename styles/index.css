@@ -45,7 +45,16 @@
 .cqbk {
     height: 100px;
 }
-
+.cqbk a{
+    display: block;
+    height: 100px;
+    width: 180px;
+    background: url(../images/home_01.png) no-repeat;
+}
+.cqbk a:hover{
+    padding-left: 10px;
+    background: url(../images/hover_01.png) 10px no-repeat;
+}
 .lpbk {
     height: 100px;
 }
@@ -53,16 +62,26 @@
     display: block;
     height: 100px;
     width: 180px;
-    background: url(../images/yuan.jpg) no-repeat;
+    background: url(../images/home_02.png) no-repeat;
 }
 .lpbk a:hover{
-    background: url(../images/yuan_hover.jpg) no-repeat;
+    padding-left: 10px;
+    background: url(../images/hover_02.png) 10px no-repeat;
 }
 
 .fzbk {
     height: 100px;
 }
-
+.fzbk a{
+    display: block;
+    height: 100px;
+    width: 180px;
+    background: url(../images/home_03.png) no-repeat;
+}
+.fzbk a:hover{
+    padding-left: 10px;
+    background: url(../images/hover_03.png) 10px no-repeat;
+}
 .jdjm {
     margin-left: 20px;
     height: 300px;
@@ -70,10 +89,49 @@
     float: left;
 }
 .jdjm img{
-    margin-top: 20px;
     width: 190px;
-    height: 150px;
+    height: 300px;
+    display: block;
 }
+.jdjm .content{
+	width: 190px;
+	height: 90px;
+	position: relative;
+	z-index: 5;
+	top: -90px;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.jdjm .content dl {
+    width: 180px;
+    padding: 0 5px;
+    height: 65px;
+}
+
+.jdjm .content dl dd {
+    line-height: 20px;
+    font-size: 12px;
+    text-indent: 2em;
+    color: #CCC;
+
+}
+
+.jdjm .content dl dt {
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.jdjm .content dt a {
+    color: white;
+}
+
+.jdjm .content dt a:hover {
+    padding-left: 2px;
+}
+
 .yjzs {
     float: left;
     margin-left: 20px;
