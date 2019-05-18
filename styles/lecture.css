@@ -1,0 +1,82 @@
+@import url(detail.css);
+@import url(pagination.css);
+
+.leftcon h2 {
+    font-family: 'FZQK';
+    font-size: 28px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.con-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.con-top img {
+    max-height: 140px;
+    width: 300px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.con-top p {
+    line-height: 26px;
+    text-indent: 2em;
+}
+
+.con-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+}
+
+.con-list li {
+    width: 134px;
+    height: 40px;
+    text-align: center;
+    background: url("../images/lib/li.png") no-repeat center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.con-list li a {
+    width: 134px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "宋体";
+}
+
+.con-list li:hover {
+    background-image: url("../images/lib/li_hover.png");
+}
+
+
+.rightcon .MM ul li a {
+	width: 245px;
+    height: 30px;
+    line-height: 30px;
+	padding-left: 15px;
+	background: url(/images/libg.png) no-repeat 2px 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+	text-overflow: ellipsis;
+}
+
+.rightcon .MM ul li a:hover {
+	padding-left: 20px;
+	background: url(../images/libg.png) no-repeat 4px 12px;
+	color: #dfb162;
+}
