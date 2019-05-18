@@ -1,5 +1,223 @@
 @charset "utf-8";
+.ques{
+    line-height: 24px;
+    font-size: 14px;
+}
+.ques-ans-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+.ques-ans-item{
+    width: 40%;
+    position: relative;
+    height: 30px;
+}
+.ques-ans-item input[type='checkbox'] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+.ques-ans-item label {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+}
+.ques-ans-item label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+.quiz{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d6a11a;
+    box-sizing: border-box;
+    margin-right: 3px;
+}
+.ques-ans-item label:after {
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
 
-.singleOption *{
-    width: auto;
+.ques-ans-item input[type='checkbox']:checked + label:before {
+    background: #4cd764;
+    border-color: #4cd764;
+}
+.ques-ans-item input[type='checkbox']:checked + label:after {
+    background: #4cd764;
+}
+.ques-ans-item {
+    position: relative;
+    height: 35px;
+}
+.ques-ans-item > input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height:20px;
+    opacity: 0;
+}
+.ques-ans-item > label {
+    position: absolute;
+    left: 30px;
+    line-height: 20px;
+    top: 0px;
+}
+.ques-ans-item > label:before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+.ques-ans-item > label:after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+.ques-ans-item input[type='radio']:checked + label:before {
+    border-color: #4cd764;
+}
+.ques-ans-item input[type='radio']:checked + label:after {
+    background: #4cd764;
+}
+
+.quiz input[type='submit']{
+    display: block;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.caidan{
+    position: fixed;
+    bottom: 70px;
+    right: 40px;
+    cursor: pointer;
+}
+.caidan img{
+    width: 100px;
+}
+.jiexi{
+    display: none;
+    color: orange;
+    text-align: right;
+    padding-right: 30px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.highlight{
+    color: red;
+    font-size: 20px;
+}
+#res{
+    margin-top: 20px;
+    text-align: center;
+    color: #0088cc;
+}
+.caidan-con{
+    /* width: 500px; */
+    padding: 25px;
+}
+.caidan-con h2{
+    color: #d6a11a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.caidan-con h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.caidan-con .shuoming{
+    color: rgb(150, 148, 148);
+    text-align: center;
+}
+.caidan-con .caidan-dati{
+    margin: 20px auto;
+    line-height: 26px;
+    font-size: 16px;
+}
+.caidan-con .caidan-dati>div{
+    text-align: center;
+}
+.caidan-con .caidan-dati input{
+    font-size: 16px;
+    display: inline-block;
+    /* padding: 5px 0; */
+    width:70px;
+    border: none;
+    margin: 0 5px;
+    border-bottom: 1px solid black;
+}
+.caidan-con .caidan-dati input:focus{
+    outline:none 
+}
+.caidan-con-con span{
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+.caidan-con-con hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+.caidan-con-bottom button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-color: white;
+    background-color: #0088cc;
+    color: white;
 }
