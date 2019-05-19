@@ -8,19 +8,11 @@
     width: 730px;
 }
 
-.leftcon .T {
-    
-}
-
-/* 右侧框*/
-.rightcon .T{
-    /* padding-bottom: 10px; */
-}
-
 .rightcon{
     float: right;
     width: 320px;
 }
+
 .spsx{
     width: 100%;
 }

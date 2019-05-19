@@ -10,9 +10,7 @@
     padding: 15px;
     padding-left: 0;
 }
-.C{
-    padding: 10px;
-}
+
 .contentArea{
     width: 710px;
 	overflow: hidden;
@@ -49,28 +47,7 @@
     color: #444;
     font-family: 'SourceHanSerifSC-Regular';
 }
-.content img{
-    float:right;border: 1px solid #ccc; width:250px;
-    margin-left: 10px;
-    border:2px solid rgb(236, 145, 15);
-    /* box-shadow: 0 0 5px #000; */
-}
-.otherinfo{
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.otherinfo-item{
-    display: flex;
-    flex-wrap: nowrap;
-    /* justify-content: center; */
-    align-content: center;
-    margin: 15px auto;
-}
-.otherinfo-item>div{
-    line-height: 35px;
-    height: 35px;
-    margin: 0 10px;
-}
+
 .contentArea .content p{
     text-indent: 2em;
     line-height: 1.5;
