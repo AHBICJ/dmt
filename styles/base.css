@@ -27,7 +27,7 @@ body {height: 100%;background: url(../images/TopBG.jpg) top center no-repeat; fo
 .BK730 .MM{width: 670px; padding: 0 30px; background: url(/images/bk/BKM730_5.png);}
 .BK730 .BB{height: 30px; width: 730px; background: url(/images/bk/BKB730_30.png) no-repeat;}
 
-.haveWhiteBG .TT,.haveWhiteBG .MM,.haveWhiteBG .BB{background-color: rgba(255, 255, 255, 0.8);}
+.haveWhiteBG div{background-color: rgba(255, 255, 255, 0.8);}
 
 .bigCon {width: 100%; overflow: hidden;}
 .con {width: 1100px; margin: 0 auto; overflow: hidden;}
@@ -88,3 +88,4 @@ a {text-decoration: none; transition: .1s linear; color: #333;}
 
 .PD15{ padding-bottom: 15px;}
 .PD40{ padding-bottom: 40px;}
+

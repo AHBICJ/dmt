@@ -31,84 +31,17 @@
 .lp-list li:hover{
     background-image: url("../images/lib/part_ul_li_hover.png");
 }
-.maincon {
-    font-family: 'SourceHanSerifSC-Regular';
-    font-size: 15px;
-    line-height: 28px;
-    color: #444;
-    padding: 10px;
+.main1080{
+    background: url(../images/Bg1080.jpg) no-repeat bottom center;  
+}
+.main800{
+    background: url(../images/Bg800.jpg) no-repeat bottom center;  
+}
+.main600{
+    background: url(../images/BG600.jpg) no-repeat bottom center;  
 }
 
-.maincon p {
-    text-indent: 2em;
-    line-height: 1.5;
-    font-size: 16px;
-    margin-top: 12px;
-    margin-bottom: 10px;
-
-}
-
-.maincon .title {
-    width: 100%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #C18D46;
-    font-size: 30px;
-}
-.title span{
-    font-size: 20px;
-    font-weight: normal;
-}
-.maincon .info {
-	width: 100%;
-	text-align: center;
-	line-height: 30px;
-	color: #777;
-    padding-bottom: 10px;
-    font-size: 12px;
-	border-bottom: dotted 1px #CCC;
-}
-.maincon h2{
-    margin-bottom: 15px;
-    margin-top: 30px;
-    color: #C18D46;
-}
-.maincon h3{
-    padding-bottom: 5px;
-    border-bottom: #999 dotted 1px;
-    padding-left: 10px;
-}
-.maincon .avat{
-    margin-top: 10px;
-    float: right;
-    margin-left: 10px;
-    border:2px solid rgb(236, 145, 15);
-    width: 150px;
-    height: 180px;
-
-}
-.outer-top{
-    height: 30px;
-    width: 320px;
-    background: url("../images/bk/BKT320_30.png") no-repeat;
-    background-color: #faf8e9;
-}
-.outer-con{
-    width: 300px;
-    padding: 10px;
-    background: url("../images/bk/BKM320_5.png");
-    background-color: #faf8e9;
-
-}
-.outer-bot{
-    width: 320px;
-    height: 30px;
-    background: url("../images/bk/BKB320_30.png") no-repeat;
-    background-color: #faf8e9;
-}
-
+/* 图片格式 */
 .clothes1{
     width: 730px;
     height: auto;
@@ -116,4 +49,10 @@
 .clothes2{
     display: block;
     margin: 0 auto;
+}
+/* 滚动 */
+.mytop{
+    position: fixed;
+    top: 50px;
+    left: 62.1%;
 }

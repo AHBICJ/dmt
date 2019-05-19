@@ -5,11 +5,15 @@ function windowAddMouseWheel() {
         if (e.wheelDelta) {
             $(window).bind("scroll", function () {
                 var top = $(this).scrollTop(); // 当前窗口的滚动距离
-                console.log(top);
+                // console.log(top);
                 if (e.wheelDelta < 0) {
                     //当滑轮向下滚动时
-                    if (top > 540) $("#mytop").addClass("mytop");
-                    if (top < 540) $("#mytop").removeClass("mytop");
+                    var X = $('.moveOnRight').offset().left;
+                    if (top > 470) {
+                         $(".moveOnRight").addClass("move");
+                         $(".moveOnRight").css("left",X);
+                    } 
+                    if (top < 470) $(".moveOnRight").removeClass("move");
                 }
             });
         }

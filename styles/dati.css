@@ -44,10 +44,10 @@
     -moz-transition: all 0.3s ease;
 }
 .quiz{
-    border: 1px solid #ccc;
-    padding: 10px;
+    /* border: 1px solid #ccc; */
+    /* padding: 10px; */
     border-radius: 10px;
-    box-shadow: 0 0 10px #d6a11a;
+    /* box-shadow: 0 0 10px #d6a11a; */
     box-sizing: border-box;
     margin-right: 3px;
 }
@@ -143,6 +143,7 @@
     bottom: 70px;
     right: 40px;
     cursor: pointer;
+    display: none;
 }
 .caidan img{
     width: 100px;
@@ -163,7 +164,10 @@
     margin-top: 20px;
     text-align: center;
     color: #0088cc;
+    line-height: 1.5;
+    font-size: 14px;
 }
+
 .caidan-con{
     /* width: 500px; */
     padding: 25px;
@@ -220,4 +224,9 @@
     border-color: white;
     background-color: #0088cc;
     color: white;
+}
+.quiz input[type="submit"]{
+    background-color: #f8c543;
+    color: rgb(51, 51, 51);
+    border: none;
 }

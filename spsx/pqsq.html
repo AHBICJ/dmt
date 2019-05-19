@@ -7,6 +7,8 @@
     <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src="../scripts/layer-v3.1.1/layer.js"></script>
+    <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
     <link rel="stylesheet" href="../styles/yjsx.css">
     <link rel="stylesheet" href="../styles/dati.css">
 </head>
@@ -105,117 +107,130 @@
                     <h2>三分互动</h2>
                 </div>
                 <div class="C">
-                    <div class="TT"></div>
-                    <div class="MM">
-                        <form id="quiz" class="quiz" onsubmit="return false">
-                            <div class="ques" id="q1">
-                                <h3 class="ques-title">越剧《盘妻索妻》 是什么流派的代表作？(单选)</h3>
-                                <div class="ques-ans-group">
-                                    <div class="ques-ans-item">
-                                        <input type="radio" name="t1" value="yi" id="yi"><label for="yi">尹派</label>
-                                    </div>
-                                    <div class="ques-ans-item">
-                                        <input type="radio" name="t1" value="lv" id="lv"><label for="lv">吕派</label>
-                                    </div>
-                                    <div class="ques-ans-item">
-                                        <input type="radio" name="t1" value="lu" id="lu"><label for="lu">陆派</label>
-                                    </div>
-                                    <div class="ques-ans-item">
-                                        <input type="radio" name="t1" value="fan" id="fan"><label for="fan">范派</label>
-                                    </div>
+                    <div class="BK320">
+                        <div class="TT"></div>
+                        <div class="MM">
+                            <form id="quiz" class="quiz" onsubmit="return false">
+                                <div class="ques" id="q1">
+                                    <h3 class="ques-title">越剧《盘妻索妻》 是什么流派的代表作？(单选)</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="yi" id="yi"><label for="yi">尹派</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="lv" id="lv"><label for="lv">吕派</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="lu" id="lu"><label for="lu">陆派</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="fan" id="fan"><label
+                                                for="fan">范派</label>
+                                        </div>
 
-                                </div>
-                                <div class="jiexi" data-ans="1">
-                                    解析
-                                </div>
-                            </div>
-                            <div class="ques" id="q2">
-                                <h3 class="ques-title">越剧《盘妻索妻》的主角有那些？（多选）</h3>
-                                <div class="ques-ans-group">
-                                    <div class="ques-ans-item">
-                                        <input type="checkbox" name="t2" value="liangyushu" id="liangyushu"><label
-                                            for="liangyushu">梁玉书</label>
                                     </div>
-                                    <div class="ques-ans-item">
-                                        <input type="checkbox" name="t2" value="xieyunxia" id="xieyunxia"><label
-                                            for="xieyunxia">谢云霞</label>
-                                    </div>
-                                    <div class="ques-ans-item">
-                                        <input type="checkbox" name="t2" value="liurenyuan" id="liurenyuan"><label
-                                            for="liurenyuan">刘仁元</label>
-                                    </div>
-                                    <div class="ques-ans-item">
-                                        <input type="checkbox" name="t2" value="wangjunan" id="wangjunan"><label
-                                            for="wangjunan">王君安</label>
+                                    <div class="jiexi" data-ans="1">
+                                        解析
                                     </div>
                                 </div>
-                                <div class="jiexi" data-ans="2">
-                                    解析
+                                <div class="ques" id="q2">
+                                    <h3 class="ques-title">越剧《盘妻索妻》的主角有那些？（多选）</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="liangyushu" id="liangyushu"><label
+                                                for="liangyushu">梁玉书</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="xieyunxia" id="xieyunxia"><label
+                                                for="xieyunxia">谢云霞</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="liurenyuan" id="liurenyuan"><label
+                                                for="liurenyuan">刘仁元</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="wangjunan" id="wangjunan"><label
+                                                for="wangjunan">王君安</label>
+                                        </div>
+                                    </div>
+                                    <div class="jiexi" data-ans="2">
+                                        解析
+                                    </div>
                                 </div>
-                            </div>
-                            <input type="submit" value="提交" id="submit">
-                        </form>
+                                <input type="submit" value="提交" id="submit">
+                            </form>
+
+
+                        </div>
+                        <div class="BB"></div>
                         <p id="res"></p>
-                        <script>
-                            $(".jiexi").click(function () {
-                                let qnum = $(this).data("ans");
-                                $(".con-text span[class^='ans']").removeClass("highlight")
-                                $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
-                            })
-                        </script>
-
-
-                        <script>
-                            function formser(formid) {
-                                let form = document.getElementById(formid);
-                                let arr = {};
-                                for (let i = 0; i < form.elements.length; i++) {
-                                    let feled = form.elements[i];
-                                    switch (feled.type) {
-                                        case undefined:
-                                        case 'button':
-                                        case 'file':
-                                        case 'reset':
-                                        case 'submit':
-                                            break;
-                                        case 'checkbox':
-                                        case 'radio':
-                                            if (!feled.checked) {
-                                                break;
-                                            }
-                                            default:
-                                                if (arr[feled.name]) {
-                                                    arr[feled.name] = arr[feled.name] + ',' + feled.value;
-                                                } else {
-                                                    arr[feled.name] = feled.value;
-
-                                                }
-                                    }
-                                }
-                                return arr;
-                            }
-
-                            const sub = document.querySelector('#submit');
-                            sub.addEventListener('click', e => {
-                                let ans = formser("quiz");
-                                // debugger;
-                                // console.log(ans);
-                                if (JSON.stringify(ans) == '{"t1":"false","t2":"a,d"}') {
-                                    document.getElementById('res').innerText = "正确";
-                                } else {
-                                    document.getElementById('res').innerText = "错误";
-                                }
-                                $(this).prop("disabled", true);
-                                $(".jiexi").show();
-                                return false;
-                            });
-                        </script>
                     </div>
-                    <div class="EE"></div>
                 </div>
             </div>
-
         </div>
+        <script>
+            $(".jiexi").click(function () {
+                let qnum = $(this).data("ans");
+                $(".con-text span[class^='ans']").removeClass("highlight")
+                $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
+            })
+        </script>
+        <script>
+            $.fn.serializeObject = function () {
+                var o = {};
+                var a = this.serializeArray();
+                $.each(a, function () {
+                    if (o[this.name]) {
+                        if (!o[this.name].push) {
+                            o[this.name] = [o[this.name]];
+                        }
+                        o[this.name].push(this.value || '');
+                    } else {
+                        o[this.name] = this.value || '';
+                    }
+                });
+                return o;
+            }
+            const resmap = {
+                0: "越剧新手",
+                1: "略知越剧",
+                2: "越剧大师",
+            }
+            var time=0;
+            const sub = document.querySelector('#submit');
+            sub.addEventListener('click', e => {
+                
+                var ans = $("#quiz").serializeObject();;
+                debugger;
+                console.log(ans);
+                var rescore = 0;
+                if (ans['t1'] == "yi") {
+                    rescore++;
+                }
+                if (ans['t2'] == "liangyushu,xieyunxia,liurenyuan") {
+                    rescore++;
+                }
+
+                time++;
+                var resnode = document.getElementById('res');
+                switch (rescore) {
+                    case 0:
+                        resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
+                        break;
+                    case 1:
+                        resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
+                        break;
+                    case 2:
+                        resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
+                            "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
+                        if (time==1) $(".caidan").show();
+                        break;
+                }
+                $(this).prop("disabled", true);
+                $(".jiexi").show();
+                return false;
+            });
+        </script>
         <div class="con vcom">
             <div id="vcomments" style="padding-bottom: 65px;"></div>
             <script>
@@ -259,18 +274,28 @@
             <button>开奖</button>
         </div>
     </div>
+
     <script>
         $(".caidan-con-bottom button").click(function () {
             let ans = $(".caidan-dati").eq(0).find(":input").val().trim();
             if (ans == "盘夫索夫") {
-                alert("you win");
+                layer.open({
+                    icon: 1,
+                    type: 0,
+                    title: 'you win ',
+                    content:"恭喜你答对了 请自行 领取奖品"
+                });
             } else {
-                alert("you lose it");
+                layer.open({
+                    icon: 2,
+                    type: 0,
+                    title: 'you lose',
+                    content:"再接再厉"
+                })
             }
         })
     </script>
-    <script src="../scripts/layer-v3.1.1/layer.js"></script>
-    <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
+
     <script>
         $(".caidan").click(function () {
 
