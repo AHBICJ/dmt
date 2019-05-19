@@ -109,14 +109,7 @@
 
 
 /* 越剧流派 */
-.content hr{
-    color: #eee;
-    opacity: 0.5;
-}
 .con-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
 }
 .con-top a{
     padding-left: 5px;
@@ -126,11 +119,10 @@
     color: #dfb162;
 }
 .con-top img{
-    max-height: 140px;
-    width: 300px;
+    width: 200px;
     float: left;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 .con-top p{
     line-height: 26px;
