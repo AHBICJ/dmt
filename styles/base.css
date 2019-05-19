@@ -37,6 +37,21 @@ body {
     background: url(/images/bk/BKB320_30.png) no-repeat;
 }
 
+.BK340 .TT{
+    height: 30px;
+    width: 340px;
+    background: url(/images/bk/BKT340_30.png) no-repeat;
+}
+.BK340 .MM{
+    width: 280px;
+    padding: 0 30px;
+    background: url(/images/bk/BKM340_5.png);}
+.BK340 .BB{
+    height: 30px;
+    width: 340px;
+    background: url(/images/bk/BKB340_30.png) no-repeat;
+}
+
 .BK370 .TT{
     height: 30px;
     width: 370px;
