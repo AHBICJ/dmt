@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/styles/second.css">
     <link rel="stylesheet" href="styles/introduction.css">
     <link rel="stylesheet" href="/styles/dati.css">
-    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="../scripts/layer-v3.1.1/layer.js"></script>
     <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
 </head>
@@ -38,7 +38,7 @@
             </ul>
         </div>
     </div>
-    <div class="bigCon main">
+    <div class="bigCon main con-text">
         <div class="con C2">
             <div class="leftcon">
                 <div class="T">
@@ -274,6 +274,7 @@
     <script>
         $(".jiexi").click(function () {
             let qnum = $(this).data("ans");
+            debugger;
             $(".con-text span[class^='ans']").removeClass("highlight")
             $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
             $('html, body').animate({

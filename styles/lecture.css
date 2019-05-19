@@ -16,23 +16,28 @@
 }
 
 .con-top {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 
 .con-top img {
-    max-height: 140px;
-    width: 300px;
-    float: left;
-    margin-left: 10px;
-    margin-right: 20px;
+	width: 200px;
+	float: left;
+	margin: 10px 10px 5px 0;
 }
 
 .con-top p {
     line-height: 26px;
     text-indent: 2em;
 }
+.con-top p a{
+    float: right;
+    padding-right: 10px;
+}
+.con-top p a:hover {
+    color: #dfb162;
+    padding-right: 5px;
+}
+
 
 .con-list {
     display: flex;
@@ -92,3 +97,4 @@
 .mainOut{
     background:url(../images/BG1080.jpg) no-repeat bottom center;
 }
+
