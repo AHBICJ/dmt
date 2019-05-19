@@ -45,7 +45,6 @@
 }
 
 .right {
-    margin-top: 50px;
     width: 320px;
     height: auto;
     overflow: hidden;
@@ -100,16 +99,13 @@ input[type='submit'] {
     margin-top: 20px;
     background-color: #f1f1f1;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 input[type='submit']:hover {
     color: white;
     background-color: #DDAC58;
     cursor: pointer;
-}
-
-.mytext p {
-    text-indent: 0em;
 }
 
 .BK320 {
@@ -139,12 +135,18 @@ input[type='submit']:hover {
     padding: 0 10px;
     height: auto;
 }
-
-.T {
+ /* 改东西 */
+.bigleft .T {
     border-bottom: solid 4px #C18D46;
     margin-bottom: 15px;
 }
-
+.right .T {
+    margin-bottom: 2px;
+}
+.mytext p{
+    text-indent: 0em;
+    margin:  0 0 10px 0;
+}
 .title {
     width: 100%;
     text-align: center;
