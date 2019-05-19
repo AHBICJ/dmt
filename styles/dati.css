@@ -127,16 +127,6 @@
     font-size: 16px;
     margin: 0 auto;
 }
-.caidan{
-    position: fixed;
-    bottom: 70px;
-    right: 40px;
-    cursor: pointer;
-    display: none;
-}
-.caidan img{
-    width: 100px;
-}
 .jiexi{
     display: none;
     color: orange;
@@ -211,13 +201,18 @@
 .caidan-con-bottom button{
     display: block;
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-color: white;
-    background-color: #0088cc;
-    color: white;
+    background-color: #f8c543;
+    border: none;
+    font-size: 16px;
+    color: rgb(53, 52, 52);
 }
 .quiz input[type="submit"]{
     background-color: #f8c543;
     color: rgb(51, 51, 51);
     border: none;
+}
+.caidan{
+    display: none;
 }

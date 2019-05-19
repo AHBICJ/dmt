@@ -41,9 +41,12 @@ hr {
 }
 
 h1 {
+    font-family: 'FZQK';
     text-align: center;
     font-size: 30px;
+    font-weight: 400;
 }
+
 
 p {
     text-indent: 2em;
@@ -84,3 +87,4 @@ p {
 .mainOut{
     background:url(../images/lib/libBG.jpg) no-repeat bottom center;
 }
+
