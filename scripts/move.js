@@ -9,11 +9,29 @@ function windowAddMouseWheel() {
                 if (e.wheelDelta < 0) {
                     //当滑轮向下滚动时
                     var X = $('.moveOnRight').offset().left;
-                    if (top > 470) {
-                         $(".moveOnRight").addClass("move");
-                         $(".moveOnRight").css("left",X);
-                    } 
-                    if (top < 470) $(".moveOnRight").removeClass("move");
+                    var Y = $(".vwrap").offset().top;
+                    console.log($('.moveOnRight').height());
+                    // console.log(top+$('.rightcon').height());
+                    // console.log(Y);
+                    if (top > 500) {
+                        if (top + $('.moveOnRight').height() > Y) {
+                            $(".moveOnRight").removeClass("move");
+                            $(".moveOnRight").css("margin-top", Y - $('.moveOnRight').height()-510);
+                        }
+                        else if (top + $('.moveOnRight').height() < Y) {
+                            $(".moveOnRight").addClass("move");
+                            $(".moveOnRight").css("left", X);
+                            $(".moveOnRight").css("margin-top", 0);
+                        }
+                    }
+
+
+                    else if (top > 470) {
+                        $(".moveOnRight").addClass("move");
+                        $(".moveOnRight").css("left", X);
+                    }
+                    else if (top < 470) $(".moveOnRight").removeClass("move");
+
                 }
             });
         }
