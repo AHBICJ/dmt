@@ -6,8 +6,11 @@
     margin-top: 10px;
     float: right;
     margin-left: 10px;
-    border:2px solid rgb(236, 145, 15);
+    border:2px solid #dfb162;
     width: 150px;
     height: 180px;
+}
 
+.T h2 a:hover{
+    color: #dfb162;
 }
