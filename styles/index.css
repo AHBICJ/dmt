@@ -68,3 +68,34 @@
 .spsx-pics a:hover img{ box-shadow:2px 3px 8px -3px #333333;}
 .spsx-pics a:active img{ transition: .1s cubic-bezier(0.445, 0.05, 0.55, 0.95); box-shadow:2px 3px 8px -7px #333333;}
 
+.yjjy img{
+    width: 100%;
+}
+
+.yjjy p {
+    text-indent: 2em;
+    line-height: 1.5;
+}
+
+.yjjy .MM{
+    overflow: hidden;
+}
+
+.yjjy .MM > a:hover {
+    color: #dfb162;
+}
+.yjjy .MM{
+    overflow: hidden;
+}
+
+.yjjy .MM p a{
+    color: #999;
+    float: right;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 18px;
+}
+.yjjy .MM p a:hover{
+    color: #dfb162;
+    margin-right: 10px;
+}
