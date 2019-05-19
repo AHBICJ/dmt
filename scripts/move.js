@@ -15,11 +15,11 @@ function windowAddMouseWheel() {
                     // console.log(Y);
                     // console.log(Y - $('.moveOnRight').height());
                     if (top > 500) {
-                        if (top + $('.moveOnRight').height() > Y) {
+                        if (top + $('.moveOnRight').height() +50 >= Y) {
                             $(".moveOnRight").removeClass("move");
                             $(".moveOnRight").css("margin-top", Y - $('.moveOnRight').height() - 550);
                         }
-                        else if (top + $('.moveOnRight').height() < Y) {
+                        else if (top + $('.moveOnRight').height() +50 <= Y) {
                             $(".moveOnRight").addClass("move");
                             $(".moveOnRight").css("left", X);
                             $(".moveOnRight").css("margin-top", 0);
