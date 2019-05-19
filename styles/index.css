@@ -48,7 +48,7 @@
 /* 越剧流派 */
 .con-top a{ padding-left: 5px;}
 .con-top a:hover{ padding-left: 10px; color: #dfb162;}
-.con-top img{ width: 200px; float: left; margin: 10px  10px 5px 0;}
+.con-top img{ width: 200px; float: left; margin: 10px  10px 5px 0; border-radius: 2px; box-shadow:2px 3px 8px -5px #333;}
 .con-top p{ line-height: 26px; text-indent: 2em;}
 .con-list { display: flex; flex-wrap: wrap;}
 .clear{clear:both; height: 0; line-height: 0; font-size: 0}
@@ -108,10 +108,4 @@
     margin-right: 10px;
 }
 
-.T a h2{
-    transition: 0.15s linear;
-}
-.T a:hover h2{
-    color: #dfb162;
-}
 

@@ -86,6 +86,13 @@ a {text-decoration: none; transition: .1s linear; color: #333;}
 .T span a{ padding-right: 2px;}
 .T span a:hover { padding-right: 0px; color: #dfb162;}
 
+.T a h2{
+    transition: 0.15s linear;
+}
+.T a h2:hover{
+    color: #dfb162;
+}
+
 .PD15{ padding-bottom: 15px;}
 .PD40{ padding-bottom: 40px;}
 
