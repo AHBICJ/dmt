@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styles/detail.css">
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script src="../scripts/move.js"></script>
+    <script src="../scripts/layer-v3.1.1/layer.js"></script>
+    <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <link rel="stylesheet" href="../styles/yjsx.css">
+    <link rel="stylesheet" href="../styles/dati.css">
     <style>
-        .maincon>img{
+        .maincon>img {
             float: left;
             margin: 10px 20px 15px 0;
             width: 300px;
         }
+
         .pic-silcks {
             text-align: center;
         }
+
         .pic-silcks img {
             width: 190px;
             height: 150px;
@@ -73,7 +83,7 @@
                     <p>元代时王实甫基本根据这部诸宫调将《西厢记》改编成多人演出的戏剧剧本，使故事情节更加紧凑，融合了古典诗词，文学性大大提高，但将结尾改成老夫人妥协，答应其婚事，大团圆结局。这部剧本作者说法不一，有人说是关汉卿所作[1]，也有人说是关作王续，或王作关续[2]，王作无名氏续，但认为是王实甫所作的说法比较公认[3]。
                     </p>
                     <h2>故事梗概</h2>
-                    <img src="../images/jdjm/xxj-1.jpg" alt="" >
+                    <img src="../images/jdjm/xxj-1.jpg" alt="">
                     <p>在山西普救寺借宿的书生张珙（字君瑞），偶遇扶柩回乡在寺中西厢借住的原崔相国的女儿崔莺莺，由于互相吟诗而产生爱慕。叛将孙飞虎带手下慕名围寺，要强抢崔莺莺，三日之内若不交出莺莺，“伽蓝尽皆焚烧，僧俗寸斩，不留一个”。莺莺的母亲老夫人郑氏宣称谁能救他女儿就将女儿许配他，张生向他一位故旧“白马将军”蒲州杜太守写了一封求救信，由一位僧人（惠明）突出包围送出，杜太守发兵解围。过后老夫人因门第不当悔婚，只是赠金并让莺莺拜张生为义兄以谢搭救。张生在悲恸之下患病，莺莺也大为伤痛，后来在莺莺的丫鬟红娘的帮助下，两人暗通书信，并最终成功幽会。最后私情被老夫人发现，欲责罚二人，但由于红娘据理力争，无可奈何之下，老夫人命令张生上京赶考，如能蟾宫折桂便真的把莺莺许配与他，于是张生进京赴试，考中并回来迎娶莺莺，有情人终成眷属。
                     </p>
                     <h2>艺术成就</h2>
@@ -91,25 +101,105 @@
                 </div>
 
             </div>
-            <div class="rightcon sfhd">
+            <div class="rightcon sfhd moveOnRight">
                 <div class="T">
                     <h2>其他经典剧目</h2>
                 </div>
                 <div class="C">
-                    <div class="BK320 haveColor">
+                    <div class="BK320 ">
                         <div class="TT"></div>
                         <div class="MM">
-                            <ul class="listAtRight">
-                                <li><a href="./xxj.html">《西厢记》</a></li>
-                                <li><a href="javascript:void(0)">《情探》</a></li>
-                                <li><a href="./qjyl.html">《琼浆玉露》</a></li>
-                                <li><a href="./smwz.html">《沙漠王子》</a></li>
-                            </ul>
+                            <a href="./qjyl.html">
+                                <img src="../images/jdjm/qjyl.jpg" alt="" style="width: 250px; display: block">
+                                <p style="text-align: center; margin-top:10px;">《琼浆玉露》</p>
+                            </a>
                         </div>
                         <div class="BB"></div>
                     </div>
                 </div>
+                <div class="T" style="margin-top: 10px;">
+                    <h2>快乐答题</h2>
+                </div>
+                <div class="C">
+                    <div class="BK320 ">
+                        <div class="TT"></div>
+                        <div class="MM">
+                            <form id="quiz" class="quiz" onsubmit="return false">
+                                <div class="ques" id="q1">
+                                    <h3 class="ques-title">越剧《西厢记》 是中国《 》之一</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="yi" id="yi"><label
+                                                for="yi">六才子书</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="lv" id="lv"><label for="lv">会真记</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="lu" id="lu"><label for="lu">莺莺传</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="radio" name="t1" value="fan" id="fan"><label
+                                                for="fan">西厢记诸宫调</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="jiexi" data-ans="1">
+                                        解析
+                                    </div>
+                                </div>
+                                <div class="ques" id="q2">
+                                    <h3 class="ques-title">越剧《西厢记》善于描摹那些东西（多选）</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="liangyushu" id="liangyushu"><label
+                                                for="liangyushu">景物</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="xieyunxia" id="xieyunxia"><label
+                                                for="xieyunxia">气氛</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="liurenyuan" id="liurenyuan"><label
+                                                for="liurenyuan">人物的内心活动</label>
+                                        </div>
+                                        <div class="ques-ans-item">
+                                            <input type="checkbox" name="t2" value="wangjunan" id="wangjunan"><label
+                                                for="wangjunan">人物外貌</label>
+                                        </div>
+                                    </div>
+                                    <div class="jiexi" data-ans="2">
+                                        解析
+                                    </div>
+                                </div>
+                                <input type="submit" value="提交" id="submit">
+                            </form>
+                        </div>
+                        <div class="BB"></div>
+                        <div id="res"></div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="con vcom">
+            <div id="vcomments" style="padding-bottom: 65px;"></div>
+            <script>
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'hLaBCUe3D1fDYk9e4pSl3hVO-gzGzoHsz',
+                    appKey: '26uHMux3CrejqhrIyOAI42qX',
+                    notify: false,
+                    verify: false,
+                    avatar: 'identicon',
+                    placeholder: '留下一些评论吧...'
+                });
+                var infoEle = document.querySelector('#vcomments .info');
+                if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+                    infoEle.childNodes.forEach(function (item) {
+                        item.parentNode.removeChild(item);
+                    });
+                }
+            </script>
         </div>
     </div>
     <div class="bigCon foot">
@@ -129,6 +219,129 @@
         <div class="copyright">由434小组创作</div>
     </div>
     <script src="../scripts/slide.js"></script>
+    <script>
+        $(".jiexi").click(function () {
+            let qnum = $(this).data("ans");
+            $(".con-text span[class^='ans']").removeClass("highlight")
+            $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
+        })
+    </script>
+    <script>
+        $.fn.serializeObject = function () {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function () {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
+                    }
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
+                }
+            });
+            return o;
+        }
+        const resmap = {
+            0: "越剧新手",
+            1: "略知越剧",
+            2: "越剧大师",
+        }
+        var time = 0;
+        const sub = document.querySelector('#submit');
+        sub.addEventListener('click', e => {
+
+            var ans = $("#quiz").serializeObject();;
+            debugger;
+            console.log(ans);
+            var rescore = 0;
+            if (ans['t1'] == "yi") {
+                rescore++;
+            }
+            if (ans['t2'] == "liangyushu,xieyunxia,liurenyuan") {
+                rescore++;
+            }
+
+            time++;
+            var resnode = document.getElementById('res');
+            switch (rescore) {
+                case 0:
+                    resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
+                    break;
+                case 1:
+                    resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
+                    break;
+                case 2:
+                    resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
+                        "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
+                    if (time == 1) $(".caidan").show();
+                    break;
+            }
+            $(this).prop("disabled", true);
+            $(".jiexi").show();
+            setTimeout(function () {
+                $("#res").text("");
+            }, 4000, )
+            return false;
+        });
+    </script>
+    <div class="caidan">
+        <img src="../images/spsx/caidan.gif" alt="">
+    </div>
+    <div class="caidan-con" style="display: none">
+        <div class="caidan-con-con">
+            <h2>欢迎来到神奇的页面</h2>
+            <h3>在这里你可以获取一些神奇的东西</h3>
+            <p class="shuoming">但是这一切建立在你对越剧十分熟悉的前提下</p>
+            <span>那么问题来了</span>
+            <hr>
+            <div class="caidan-dati">
+                <div>
+                    《西厢记》的成书朝代是 <input type="text" name="caidan-ans" id="caidan-ans">
+                </div>
+            </div>
+        </div>
+        <div class="caidan-con-bottom">
+            <button>开奖</button>
+        </div>
+    </div>
+
+    <script>
+        var ttt;
+        $(".caidan-con-bottom button").click(function () {
+            let ans = $(".caidan-dati").eq(0).find(":input").val().trim();
+            if (ans == "元朝") {
+                layer.open({
+                    icon: 1,
+                    type: 0,
+                    title: 'you win ',
+                    content: "恭喜你答对了 请自行 领取奖品"
+                });
+            } else {
+                layer.open({
+                    icon: 2,
+                    type: 0,
+                    title: 'you lose',
+                    content: "再接再厉"
+                })
+            }
+            $(".caidan").hide();
+            layer.close(ttt);
+        })
+    </script>
+
+    <script>
+        $(".caidan").click(function () {
+
+            ttt = layer.open({
+                icon: 1,
+                type: 1,
+                title: '惊喜彩蛋',
+                area: '500px',
+                content: $(".caidan-con"),
+            });
+        })
+    </script>
 </body>
 
 </html>
