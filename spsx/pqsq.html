@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-    <script src="../scripts/move.js"></script>
     <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
     <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <script src="../scripts/layer-v3.1.1/layer.js"></script>
     <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
     <link rel="stylesheet" href="../styles/yjsx.css">
     <link rel="stylesheet" href="../styles/dati.css">
-    
+
 </head>
 
 <body>
@@ -23,12 +22,12 @@
             </div>
             <div id="nav">
                 <ul>
-                        <li class="n1"><a href="/index.html"></a></li>
-                        <li class="n2"><a href="/introduction.html"></a></li>
-                        <li class="n3"><a href="/lecture.html"></a></li>
-                        <li class="n5 pl30"><a href="/enjoy.html"></a></li>
-                        <li class="n6"><a href="/classic.html" ></a></li>
-                        <li class="n7"><a href="/education.html"></a></li>
+                    <li class="n1"><a href="/index.html"></a></li>
+                    <li class="n2"><a href="/introduction.html"></a></li>
+                    <li class="n3"><a href="/lecture.html"></a></li>
+                    <li class="n5 pl30"><a href="/enjoy.html"></a></li>
+                    <li class="n6"><a href="/classic.html"></a></li>
+                    <li class="n7"><a href="/education.html"></a></li>
                 </ul>
             </div>
         </div>
@@ -95,7 +94,7 @@
             </div>
             <div class="rightcon sfhd">
                 <div class="T">
-                    <h2>三分互动</h2>
+                    <h2>快乐答题</h2>
                 </div>
                 <div class="C moveOnRight haveWhiteBG">
                     <div class="BK320">
@@ -155,119 +154,132 @@
                         </div>
                         <div class="BB"></div>
                         <p id="res"></p>
+                        <div class="caidan">
+                            <div class="C">
+                                <div class="BK320 ">
+                                    <div class="TT"></div>
+                                    <div class="MM">
+                                        <div class="caidan-con">
+                                            <div class="caidan-con-con">
+                                                <h2>欢迎来到彩蛋</h2>
+                                                <h3>在这里你可以获取一些神奇的东西</h3>
+                                                <p class="shuoming">但是这一切建立在你对越剧十分熟悉的前提下</p>
+                                                <span>那么问题来了</span>
+                                                <hr>
+                                                <div class="caidan-dati">
+                                                    <div>
+                                                        盘妻索妻受 《<input type="text" name="caidan-ans"
+                                                            id="caidan-ans">》启发编成
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="caidan-con-bottom">
+                                                <button>开奖</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="BB"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script>
-            $(".jiexi").click(function () {
-                let qnum = $(this).data("ans");
-                $(".con-text span[class^='ans']").removeClass("highlight")
-                $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
-            })
-        </script>
-        <script>
-            $.fn.serializeObject = function () {
-                var o = {};
-                var a = this.serializeArray();
-                $.each(a, function () {
-                    if (o[this.name]) {
-                        if (!o[this.name].push) {
-                            o[this.name] = [o[this.name]];
-                        }
-                        o[this.name].push(this.value || '');
-                    } else {
-                        o[this.name] = this.value || '';
+    </div>
+    <script>
+        $(".jiexi").click(function () {
+            let qnum = $(this).data("ans");
+            $(".con-text span[class^='ans']").removeClass("highlight")
+            $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
+            $('html, body').animate({
+                scrollTop: $(".con-text").find(`.ans_${qnum}`).offset().top
+            }, 1000);
+        })
+    </script>
+    <script>
+        $.fn.serializeObject = function () {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function () {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
                     }
-                });
-                return o;
-            }
-            const resmap = {
-                0: "越剧新手",
-                1: "略知越剧",
-                2: "越剧大师",
-            }
-            var time=0;
-            const sub = document.querySelector('#submit');
-            sub.addEventListener('click', e => {
-                
-                var ans = $("#quiz").serializeObject();;
-                debugger;
-                console.log(ans);
-                var rescore = 0;
-                if (ans['t1'] == "yi") {
-                    rescore++;
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
                 }
-                if (ans['t2'] == "liangyushu,xieyunxia,liurenyuan") {
-                    rescore++;
-                }
-
-                time++;
-                var resnode = document.getElementById('res');
-                switch (rescore) {
-                    case 0:
-                        resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
-                        break;
-                    case 1:
-                        resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
-                        break;
-                    case 2:
-                        resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
-                            "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
-                        if (time==1) $(".caidan").show();
-                        break;
-                }
-                $(this).prop("disabled", true);
-                $(".jiexi").show();
-                setTimeout(function () {
-                    $("#res").text("");
-                  },4000,)
-                return false;
             });
-        </script>
-        <div class="con vcom">
-            <div id="vcomments" style="padding-bottom: 65px;"></div>
-            <script>
-                new Valine({
-                    el: '#vcomments',
-                    appId: 'hLaBCUe3D1fDYk9e4pSl3hVO-gzGzoHsz',
-                    appKey: '26uHMux3CrejqhrIyOAI42qX',
-                    notify: false,
-                    verify: false,
-                    avatar: 'identicon',
-                    placeholder: '留下一些评论吧...'
+            return o;
+        }
+        const resmap = {
+            0: "越剧新手",
+            1: "略知越剧",
+            2: "越剧大师",
+        }
+        var time = 0;
+        const sub = document.querySelector('#submit');
+        sub.addEventListener('click', e => {
+
+            var ans = $("#quiz").serializeObject();;
+            debugger;
+            console.log(ans);
+            var rescore = 0;
+            if (ans['t1'] == "yi") {
+                rescore++;
+            }
+            if (ans['t2'] == "liangyushu,xieyunxia,liurenyuan") {
+                rescore++;
+            }
+
+            time++;
+            var resnode = document.getElementById('res');
+            switch (rescore) {
+                case 0:
+                    resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
+                    break;
+                case 1:
+                    resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
+                    break;
+                case 2:
+                    resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
+                        "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
+                    if (time == 1) $(".caidan").show();
+                    break;
+            }
+            $(this).prop("disabled", true);
+            $(".jiexi").show();
+            setTimeout(function () {
+                $("#res").text("");
+            }, 4000, )
+            return false;
+        });
+    </script>
+    <div class="con vcom">
+        <div id="vcomments" style="padding-bottom: 65px;"></div>
+        <script>
+            new Valine({
+                el: '#vcomments',
+                appId: 'hLaBCUe3D1fDYk9e4pSl3hVO-gzGzoHsz',
+                appKey: '26uHMux3CrejqhrIyOAI42qX',
+                notify: false,
+                verify: false,
+                avatar: 'identicon',
+                placeholder: '留下一些评论吧...'
+            });
+            var infoEle = document.querySelector('#vcomments .info');
+            if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+                infoEle.childNodes.forEach(function (item) {
+                    item.parentNode.removeChild(item);
                 });
-                var infoEle = document.querySelector('#vcomments .info');
-                if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-                    infoEle.childNodes.forEach(function (item) {
-                        item.parentNode.removeChild(item);
-                    });
-                }
-            </script>
-        </div>
+            }
+        </script>
+    </div>
     </div>
 
 
-    <div class="caidan">
-        <img src="../images/spsx/caidan.gif" alt="">
-    </div>
-    <div class="caidan-con" style="display: none">
-        <div class="caidan-con-con">
-            <h2>欢迎来到神奇的页面</h2>
-            <h3>在这里你可以获取一些神奇的东西</h3>
-            <p class="shuoming">但是这一切建立在你对越剧十分熟悉的前提下</p>
-            <span>那么问题来了</span>
-            <hr>
-            <div class="caidan-dati">
-                <div>
-                    盘妻索妻受 《<input type="text" name="caidan-ans" id="caidan-ans">》启发编成
-                </div>
-            </div>
-        </div>
-        <div class="caidan-con-bottom">
-            <button>开奖</button>
-        </div>
-    </div>
+
 
     <script>
         var ttt;
@@ -278,33 +290,20 @@
                     icon: 1,
                     type: 0,
                     title: 'you win ',
-                    content:"恭喜你答对了 请自行 领取奖品"
+                    content: "恭喜你答对了 请自行 领取奖品"
                 });
             } else {
                 layer.open({
                     icon: 2,
                     type: 0,
                     title: 'you lose',
-                    content:"再接再厉"
+                    content: "再接再厉"
                 })
             }
             $(".caidan").hide();
-            layer.close(ttt);
         })
     </script>
 
-    <script>
-        $(".caidan").click(function () {
-
-            ttt=layer.open({
-                icon: 1,
-                type: 1,
-                title: '惊喜彩蛋',
-                area: '500px',
-                content: $(".caidan-con"),
-            });
-        })
-    </script>
     <div class="bigCon foot">
         <div class="copyright">
             <a href="index.html">网站首页</a>
