@@ -196,31 +196,34 @@
                 1: "略知越剧",
                 2: "越剧大师",
             }
+            var time=0;
             const sub = document.querySelector('#submit');
             sub.addEventListener('click', e => {
-                let ans = $("#quiz").serializeObject();;
+                
+                var ans = $("#quiz").serializeObject();;
                 debugger;
                 console.log(ans);
                 var rescore = 0;
-                let resss = JSON.stringify(ans)
-                if (resss['t1'] == "yi") {
+                if (ans['t1'] == "yi") {
                     rescore++;
-                } else if (resss['t2'] == '') {
+                }
+                if (ans['t2'] == "liangyushu,xieyunxia,liurenyuan") {
                     rescore++;
                 }
 
+                time++;
                 var resnode = document.getElementById('res');
                 switch (rescore) {
                     case 0:
-                        resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为" + resmap[rescore];
+                        resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
                         break;
                     case 1:
-                        resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您为" + resmap[rescore];
+                        resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
                         break;
                     case 2:
-                        resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为" + resmap[rescore] +
+                        resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
                             "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
-                        $(".caidan").show();
+                        if (time==1) $(".caidan").show();
                         break;
                 }
                 $(this).prop("disabled", true);
