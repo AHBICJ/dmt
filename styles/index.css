@@ -1,5 +1,5 @@
 @import url("base.css");
-@import url(pagination.css);
+
 *{
     font-size: 15px;
 }
@@ -118,6 +118,13 @@
     justify-content: space-between;
     margin-bottom: 10px;
 }
+.con-top a{
+    padding-left: 5px;
+}
+.con-top a:hover{
+    padding-left: 10px;
+    color: #dfb162;
+}
 .con-top img{
     max-height: 140px;
     width: 300px;
@@ -163,42 +170,49 @@
     margin: 25px 0 10px;
 }
 
-.classicrep{
+
+.spsx{
     width: 100%;
 }
-.classicrep-bot{
-    text-align: center;
-}
-.classic-con-con{
-    display: none;
-}
-.classic-pics{
+
+.spsx-pics{
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
-.classic-pics-con{
+.spsx-pics-con{
     margin: 10px auto;
     text-align: center;
 }
-.classic-pics a:hover{
+.spsx-pics a,.spsx-pics img{
+    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.spsx-pics a:hover{
     color: #dfb162;
     padding: 0 15px !important;
+    text-shadow:2px 2px 10px rgba(50, 50, 50, 0.3);
 }
-.classic-pics img{
+.spsx-pics a:active{
+    color: #dfb162;
+    padding: 0 15px !important;
+    text-shadow:none;
+}
+.spsx-pics img{
     width: 200px;
     height: 125px;
     display: block;
+    border-radius: 2px;
     margin-bottom: 10px;
+    box-shadow:2px 3px 8px -5px #333333;
 }
-.pagination{
-    margin: 15px auto 0px;
+
+.spsx-pics a:hover img{
+    box-shadow:2px 3px 8px -3px #333333;
 }
-.con-top a{
-    padding-left: 5px;
+.spsx-pics a:active img{
+    transition: .1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    box-shadow:2px 3px 8px -7px #333333;
 }
-.con-top a:hover{
-    padding-left: 10px;
-    color: #dfb162;
-}
+
+
