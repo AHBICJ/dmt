@@ -144,8 +144,3 @@ input[type='submit']:hover {
     border-bottom: dotted 1px #CCC;
     margin-bottom: 20px;
 }
-.mytop{
-    position: fixed;
-    top: 0;
-    left: 1180px;
-}

@@ -1,57 +1,49 @@
 @charset "utf-8";
 @import url(detail.css);
 @import url(pagination.css);
+@import url(base.css);
 
-.lp-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0px;
-    border-radius: 10px;
-    justify-content: center;
+.main1080 {
+    background: url(../images/Bg1080.jpg) no-repeat bottom center;
 }
-.clear{clear:both; height: 0; line-height: 0; font-size: 0}
-.lp-list li {
-    width: 140px;
-    height: 43px;
-    text-align: center;
-    background: url("../images/lib/part_ul_li.png") no-repeat center;
-    margin-top: 10px;
+
+.main800 {
+    background: url(../images/Bg800.jpg) no-repeat bottom center;
+}
+
+.main600 {
+    background: url(../images/BG600.jpg) no-repeat bottom center;
+}
+.main400 {
+    background: url(../images/BG400.jpg) no-repeat bottom center;
+}
+.maincon h2{
+    font-size: 25px;
+}
+.maincon p {
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 12px;
     margin-bottom: 10px;
 }
-
-.lp-list li a {
-    width: 140px;
-    height: 43px;
-    line-height: 43px;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: "宋体";
-}
-.lp-list li:hover{
-    background-image: url("../images/lib/part_ul_li_hover.png");
-}
-.main1080{
-    background: url(../images/Bg1080.jpg) no-repeat bottom center;  
-}
-.main800{
-    background: url(../images/Bg800.jpg) no-repeat bottom center;  
-}
-.main600{
-    background: url(../images/BG600.jpg) no-repeat bottom center;  
-}
-
 /* 图片格式 */
-.clothes1{
-    width: 730px;
+.clothes1 {
+    padding: 17px 0 5px 5px;
+    width: 300px;
     height: auto;
+    float: right;
 }
-.clothes2{
-    display: block;
-    margin: 0 auto;
+
+.clothes2 {
+    padding: 17px 0 5px 5px;
+    width: 250px;
+    height: auto;
+    float: right;
 }
+
 /* 滚动 */
-.mytop{
+.mytop {
     position: fixed;
     top: 50px;
     left: 62.1%;
