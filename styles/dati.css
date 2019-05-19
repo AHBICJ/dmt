@@ -153,8 +153,10 @@
     color: orange;
     text-align: right;
     padding-right: 30px;
-    margin-top: -20px;
     cursor: pointer;
+    position: relative;
+    top: -20px;
+    z-index: 1;
 }
 .highlight{
     color: red;

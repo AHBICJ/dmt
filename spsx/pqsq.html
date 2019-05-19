@@ -266,6 +266,7 @@
     </div>
 
     <script>
+        var ttt;
         $(".caidan-con-bottom button").click(function () {
             let ans = $(".caidan-dati").eq(0).find(":input").val().trim();
             if (ans == "盘夫索夫") {
@@ -283,13 +284,15 @@
                     content:"再接再厉"
                 })
             }
+            $(".caidan").hide();
+            layer.close(ttt);
         })
     </script>
 
     <script>
         $(".caidan").click(function () {
 
-            layer.open({
+            ttt=layer.open({
                 icon: 1,
                 type: 1,
                 title: '惊喜彩蛋',
