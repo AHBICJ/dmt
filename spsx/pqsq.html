@@ -253,7 +253,8 @@
                 case 2:
                     resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
                         "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
-                    if (time == 1) $(".caidan").show(); $(".moveOnRight").removeClass("moveOnRight").removeClass("move");
+                    if (time == 1) $(".caidan").show();
+                    $(".moveOnRight").removeClass("moveOnRight").removeClass("move");
                     break;
             }
             $(this).prop("disabled", true);
