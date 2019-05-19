@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 
 <head>
-    <title>越剧-首页</title>
+    <title>越剧介绍</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/second.css">
     <link rel="stylesheet" href="styles/introduction.css">
+    <link rel="stylesheet" href="/styles/dati.css">
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script src="../scripts/layer-v3.1.1/layer.js"></script>
+    <link rel="stylesheet" href="../scripts/layer-v3.1.1/layer/theme/default/layer.css">
 </head>
 
 <body>
@@ -73,7 +78,7 @@
 
                             </div>
                             <h3>唱腔</h3>
-                            <p>越剧中的主要腔调是[四工调]、[尺调]、[弦下调]，除此之外，还有[C调腔],以男演员使用较多。</p>
+                            <p>越剧中的主要腔调是[四工调]、[尺调]、[弦下调]，除此之外，<span class="ans_1">还有[C调腔],以男演员使用较多。</span></p>
                             <h3>音韵</h3>
                             <p>越剧舞台语音的基础语音是嵊县方言音。部分采用近似普通话的读音，也有部分字音沿用嵊州方言中的生活语音。目前的越剧演出语音以前者为主。</p>
 
@@ -92,7 +97,8 @@
                             <h2>音乐</h2>
                             <p>越剧音乐优美抒情，因而广受欢迎。小提琴协奏曲《梁山伯与祝英台》即是以越剧曲调为基础的。</p>
                             <h3>乐器</h3>
-                            <p>越剧的主奏乐器为鼓板、越胡，其他乐器还有扬琴、二胡、中胡、大提琴等。演奏乐队传统上以中国民族乐器为主，分吹、拉、弹、打四部分。</p>
+                            <p>越剧的主奏乐器为鼓板、越胡，其他乐器还有扬琴、二胡、中胡、大提琴等。演奏乐队传统上以中国民族乐器为主，<span
+                                    class="ans_2">分吹、拉、弹、打四部分。</span></p>
                             <h2>舞台美术</h2>
 
                             <p>越剧舞台美术独具特色，并曾为黄梅戏、潮剧、琼剧、豫剧等剧种所借鉴。越剧服装清丽柔美，并借鉴了古代仕女图样式，不同于传统戏曲服装繁琐的花式，旦角尤为明显。同京剧等剧种相比，越剧化装以及布景较为写实化。
@@ -119,7 +125,7 @@
                 </div>
             </div>
 
-            <div class="rightcon yjdt">
+            <div class="rightcon">
                 <div class="T">
                     <h2>了解其他</h2>
                     <span>
@@ -139,6 +145,110 @@
                         </ul>
                     </div>
                     <div class="BB"></div>
+                </div>
+
+                <div class="T">
+                    <h2>视频赏析</h2>
+                    <span>
+                        <a href="./enjoy.html">更多→</a>
+                    </span>
+                </div>
+                <div class=" BK320 haveWhiteBG ">
+                    <div class="TT"></div>
+                    <div class="MM">
+                        <div class="spsx">
+                            <div class="spsx-pics">
+                                <a class="spsx-pics-con" href="./spsx/pqsq.html"><img src="images/spsx/pqsq.jpg"
+                                        alt="">《盘妻索妻》</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BB"></div>
+                </div>
+                <div class="T">
+                    <h2>快乐答题</h2>
+                </div>
+                <div class=" haveWhiteBG">
+                    <div class="BK320">
+                        <div class="TT"></div>
+                        <div class="MM">
+                            <form id="quiz" class="quiz" onsubmit="return false">
+                                <div class="ques" id="q1">
+                                    <h3 class="ques-title">越剧中C调腔是女演员用的多？</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="true" value="true"><label
+                                                class="singleHide" for="true"></label><label for="true">正确</label>
+                                        </div>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="false" value="false"><label
+                                                class="singleHide" for="false"></label><label for="false">错误</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="jiexi" data-ans="1">
+                                        解析
+                                    </div>
+                                </div>
+                                <div class="ques" id="q2">
+                                    <h3 class="ques-title">越剧演奏乐队分为哪几个部分?(多选)</h3>
+                                    <div class="ques-ans-group">
+                                        <div class="multipleOption">
+                                            <input type="checkbox" name="t2" value="chui" id="chui"><label
+                                                class="multipleHide" for="chui"></label><label for="chui">吹</label>
+                                        </div>
+                                        <div class="multipleOption">
+                                            <input type="checkbox" name="t2" value="la" id="la"><label
+                                                class="multipleHide" for="la"></label><label for="la">拉</label>
+                                        </div>
+                                        <div class="multipleOption">
+                                            <input type="checkbox" name="t2" value="tan" id="tan"><label
+                                                class="multipleHide" for="tan"></label><label for="la">弹</label>
+                                        </div>
+                                        <div class="multipleOption">
+                                            <input type="checkbox" name="t2" value="da" id="da"><label
+                                                class="multipleHide" for="da"></label><label for="da">打</label>
+                                        </div>
+                                    </div>
+                                    <div class="jiexi" data-ans="2">
+                                        解析
+                                    </div>
+                                </div>
+                                <input type="submit" value="提交" id="submit">
+                            </form>
+                        </div>
+                        <div class="BB"></div>
+                        <p id="res"></p>
+                        <div class="caidan">
+                            <div class="C">
+                                <div class="BK320 ">
+                                    <div class="TT"></div>
+                                    <div class="MM">
+                                        <div class="caidan-con">
+                                            <div class="caidan-con-con">
+                                                <h2>欢迎来到彩蛋</h2>
+                                                <h3>在这里你可以获取一些神奇的东西</h3>
+                                                <p class="shuoming">但是这一切建立在你对越剧十分熟悉的前提下</p>
+                                                <span>那么问题来了</span>
+                                                <hr>
+                                                <div class="caidan-dati">
+                                                    <div>
+                                                            越剧角色行当分为 <input type="text" name="caidan-ans"
+                                                            id="caidan-ans">个
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="caidan-con-bottom">
+                                                <button>开奖</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="BB"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,6 +271,97 @@
         <div class="copyright">由434小组创作</div>
     </div>
     <script src="scripts/slide.js"></script>
+    <script>
+        $(".jiexi").click(function () {
+            let qnum = $(this).data("ans");
+            $(".con-text span[class^='ans']").removeClass("highlight")
+            $(".con-text").find(`.ans_${qnum}`).addClass("highlight");
+            $('html, body').animate({
+                scrollTop: $(".con-text").find(`.ans_${qnum}`).offset().top
+            }, 1000);
+        })
+    </script>
+    <script>
+        $.fn.serializeObject = function () {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function () {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
+                    }
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
+                }
+            });
+            return o;
+        }
+        const resmap = {
+            0: "越剧新手",
+            1: "略知越剧",
+            2: "越剧大师",
+        }
+        var time = 0;
+        const sub = document.querySelector('#submit');
+        sub.addEventListener('click', e => {
+
+            var ans = $("#quiz").serializeObject();;
+            debugger;
+            console.log(ans);
+            var rescore = 0;
+            if (ans['t1'] == "false") {
+                rescore++;
+            }
+            if (ans['t2'] == "chui,la,tan,da") {
+                rescore++;
+            }
+
+            time++;
+            var resnode = document.getElementById('res');
+            switch (rescore) {
+                case 0:
+                    resnode.innerHTML = "很遗恨你没有答对<br> 根据你的答题情况 我们认为您为 " + resmap[rescore];
+                    break;
+                case 1:
+                    resnode.innerHTML = "恭喜你答对一道题<br> 根据你的答题情况 我们认为您 " + resmap[rescore];
+                    break;
+                case 2:
+                    resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
+                        "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
+                    if (time == 1) $(".caidan").show();
+                    $(".moveOnRight").removeClass("moveOnRight").removeClass("move");
+                    break;
+            }
+            $(this).prop("disabled", true);
+            $(".jiexi").show();
+            setTimeout(function () {
+                $("#res").text("");
+            }, 4000)
+            return false;
+        });
+    </script>
+    <script>
+        $(".caidan-con-bottom button").click(function () {
+            let ans = $(".caidan-dati").eq(0).find(":input").val().trim();
+            if (ans == "6") {
+                layer.open({
+                    icon: 1,
+                    type: 0,
+                    title: 'you win ',
+                    content: "恭喜你答对了 成功获取100积分"
+                });
+            } else {
+                layer.open({
+                    icon: 2,
+                    type: 0,
+                    title: 'you lose',
+                    content: "再接再厉"
+                })
+            }
+            $(".caidan").hide();
+        })
+    </script>
 </body>
 
 </html>
