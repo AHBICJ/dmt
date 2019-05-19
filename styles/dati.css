@@ -219,14 +219,14 @@ input[type="submit"]:active{
 .ques-ans-item input[type='radio']:checked + label:after {
     background-color: rgb(240, 176, 86);
 }
-
+*/
 .quiz input[type='submit']{
     display: block;
     padding: 5px 15px;
     font-size: 16px;
     margin: 0 auto;
 }
-*/
+
 .jiexi{
     display: none;
     color: orange;
