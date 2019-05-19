@@ -9,8 +9,8 @@
 }
 /* 越剧介绍 */
 .yjjs .MM p{ text-indent: 2em; line-height: 26px;}
-.yjjs .MM p span a{ padding-left: 5px; color: #999;}
-.yjjs .MM p span a:hover{ padding-left: 10px; color: #dfb162;}
+.yjjs .MM p a{ text-indent: 0; float:right; padding-right: 10px; color: #999;}
+.yjjs .MM p a:hover{ padding-right: 5px; color: #dfb162;}
 /* 越剧知识 */
 .yjzs .MM ul li a {
 	width: 245px; height: 30px; line-height: 30px;
@@ -48,14 +48,13 @@
 /* 越剧流派 */
 .con-top a{ padding-left: 5px;}
 .con-top a:hover{ padding-left: 10px; color: #dfb162;}
-.con-top img{ width: 200px; float: left; margin-right: 10px; margin-bottom: 5px;}
+.con-top img{ width: 200px; float: left; margin: 10px  10px 5px 0;}
 .con-top p{ line-height: 26px; text-indent: 2em;}
 .con-list { display: flex; flex-wrap: wrap;}
 .clear{clear:both; height: 0; line-height: 0; font-size: 0}
 .con-list li { width: 134px; height:40px; text-align: center; background: url("../images/lib/li.png") no-repeat center; margin-top: 10px; margin-bottom: 10px;}
 .con-list li a { width: 134px; height: 40px; line-height: 40px; display: block; font-weight: bold; font-size: 16px; font-family: "宋体";}
 .con-list li:hover{ background-image: url("../images/lib/li_hover.png");}
-.changqiang  p{ line-height: 30px;}
 .changqiang  hr { margin: 25px 0 10px;}
 
 .spsx{ width: 100%;}
@@ -67,6 +66,15 @@
 .spsx-pics img{ width: 200px; height: 125px; display: block; border-radius: 2px; margin-bottom: 10px; box-shadow:2px 3px 8px -5px #333333;}
 .spsx-pics a:hover img{ box-shadow:2px 3px 8px -3px #333333;}
 .spsx-pics a:active img{ transition: .1s cubic-bezier(0.445, 0.05, 0.55, 0.95); box-shadow:2px 3px 8px -7px #333333;}
+
+.content p a{
+    float: right;
+    padding-right: 10px;
+}
+.content p a:hover{
+    padding-right: 5px;
+    color: #dfb162;
+}
 
 .yjjy img{
     width: 100%;
@@ -106,3 +114,4 @@
 .T a:hover h2{
     color: #dfb162;
 }
+
