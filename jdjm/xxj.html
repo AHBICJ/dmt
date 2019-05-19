@@ -131,43 +131,49 @@
                                 <div class="ques" id="q1">
                                     <h3 class="ques-title">越剧《西厢记》 是中国《 》之一</h3>
                                     <div class="ques-ans-group">
-                                        <div class="ques-ans-item">
-                                            <input type="radio" name="t1" value="yi" id="yi"><label
-                                                for="yi">六才子书</label>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="yi" value="yi"><label class="singleHide"
+                                                for="yi"></label><label for="yi">六才子书</label>
                                         </div>
-                                        <div class="ques-ans-item">
-                                            <input type="radio" name="t1" value="lv" id="lv"><label for="lv">会真记</label>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="lv" value="lv"><label class="singleHide"
+                                                for="lv"></label><label for="lv">会真记</label>
                                         </div>
-                                        <div class="ques-ans-item">
-                                            <input type="radio" name="t1" value="lu" id="lu"><label for="lu">莺莺传</label>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="lu" value="lu"><label class="singleHide"
+                                                for="lu"></label><label for="lu">莺莺传</label>
                                         </div>
-                                        <div class="ques-ans-item">
-                                            <input type="radio" name="t1" value="fan" id="fan"><label
-                                                for="fan">西厢记诸宫调</label>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="fan" value="fan"><label class="singleHide"
+                                                for="fan"></label><label for="fan">西厢记诸宫调</label>
                                         </div>
-
                                     </div>
                                     <div class="jiexi" data-ans="1">
                                         解析
                                     </div>
                                 </div>
+
                                 <div class="ques" id="q2">
                                     <h3 class="ques-title">越剧《西厢记》善于描摹那些东西（多选）</h3>
                                     <div class="ques-ans-group">
-                                        <div class="ques-ans-item">
+                                        <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="liangyushu" id="liangyushu"><label
+                                                class="multipleHide" for="liangyushu"></label><label
                                                 for="liangyushu">景物</label>
                                         </div>
-                                        <div class="ques-ans-item">
+                                        <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="xieyunxia" id="xieyunxia"><label
+                                                class="multipleHide" for="xieyunxia"></label><label
                                                 for="xieyunxia">气氛</label>
                                         </div>
-                                        <div class="ques-ans-item">
+                                        <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="liurenyuan" id="liurenyuan"><label
+                                                class="multipleHide" for="liurenyuan"></label><label
                                                 for="liurenyuan">人物的内心活动</label>
                                         </div>
-                                        <div class="ques-ans-item">
+                                        <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="wangjunan" id="wangjunan"><label
+                                                class="multipleHide" for="wangjunan"></label><label
                                                 for="wangjunan">人物外貌</label>
                                         </div>
                                     </div>
@@ -213,7 +219,7 @@
             </div>
         </div>
         <div class="con vcom">
-            <div id="vcomments" ></div>
+            <div id="vcomments"></div>
             <script>
                 new Valine({
                     el: '#vcomments',
@@ -307,7 +313,7 @@
                 case 2:
                     resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您为 " + resmap[rescore] +
                         "<br> <span class='highlight'>随后将会有惊喜等着您</span>";
-                    if (time == 1) $(".caidan").show();
+                    if (time == 1) $(".caidan").show(); $(".moveOnRight").removeClass("moveOnRight").removeClass("move");
                     break;
             }
             $(".jiexi").show();
@@ -331,7 +337,7 @@
                     icon: 1,
                     type: 0,
                     title: 'you win ',
-                    content: "恭喜你答对了 请自行 领取奖品"
+                    content: "恭喜你答对了 获得100积分"
                 });
             } else {
                 layer.open({
