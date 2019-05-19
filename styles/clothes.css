@@ -23,7 +23,7 @@
 .maincon p {
     text-indent: 2em;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 12px;
     margin-bottom: 10px;
 }
@@ -37,7 +37,7 @@
 
 .clothes2 {
     padding: 17px 0 5px 5px;
-    width: 250px;
+    width: 200px;
     height: auto;
     float: right;
 }
