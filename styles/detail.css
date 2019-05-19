@@ -32,7 +32,7 @@
     font-size: 15px;
     line-height: 28px;
     color: #444;
-    padding: 10px;
+    padding: 0 30px 30px;
 }
 
 /* 包括标题 */
@@ -129,3 +129,8 @@
     color: #C18D46;
 }
 
+/* MOVE */
+.move{
+    position: fixed;
+    top: 50px;
+}
