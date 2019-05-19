@@ -159,24 +159,43 @@
     top: 50px;
 }
 
+.normalPic {
+    width: 320px;
+    margin: 0;
+    border-radius: 2px;
+    box-shadow: 2px 3px 8px -7px #333;
+}
 .floatRight {
     float: right;
+    margin-right: 4px;
+    margin-left: 8px;
 }
 
 .floatLeft {
     float: left;
+    margin-left: 4px;
+    margin-right: 8px;
 }
-
-.normalPic {
-    width: 320px;
-    margin: 0 5px 0 5px;
-    border-radius: 2px;
-    box-shadow: 2px 3px 8px -7px #333;
+.centerPic{
+    width: 500px;
+    margin: 0 auto;
+    display: block;
 }
 
 .T h2 a{
     transition: 0.15s linear;
 }
 .T h2:hover a{
+    color: #dfb162;
+}
+
+.return{
+    margin-top: 20px;
+    text-align: center;
+}
+.return a{
+    font-family: 'SourceHanSerifSC-Regular';
+}
+.return a:hover{
     color: #dfb162;
 }
