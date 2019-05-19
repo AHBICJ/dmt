@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "detail.css";
+@import url("detail.css");
 .content video {
     display: block;
     margin: 0 auto;
