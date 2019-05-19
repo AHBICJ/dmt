@@ -9,14 +9,15 @@ function windowAddMouseWheel() {
                 if (e.wheelDelta < 0) {
                     //当滑轮向下滚动时
                     var X = $('.moveOnRight').offset().left;
-                    var Y = $(".vwrap").offset().top;
-                    console.log($('.moveOnRight').height());
+                    if ($(".vwrap").length > 0) var Y = $(".vwrap").offset().top;
+                    // console.log($('.moveOnRight').height());
                     // console.log(top+$('.rightcon').height());
                     // console.log(Y);
+                    // console.log(Y - $('.moveOnRight').height());
                     if (top > 500) {
                         if (top + $('.moveOnRight').height() > Y) {
                             $(".moveOnRight").removeClass("move");
-                            $(".moveOnRight").css("margin-top", Y - $('.moveOnRight').height()-510);
+                            $(".moveOnRight").css("margin-top", Y - $('.moveOnRight').height() - 550);
                         }
                         else if (top + $('.moveOnRight').height() < Y) {
                             $(".moveOnRight").addClass("move");
