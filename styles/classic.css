@@ -1,1 +1,6 @@
 @import url("second.css");
+@import url("pagination.css");
+.pagination{
+    display: inline-block;
+    margin: 0 auto;
+}
