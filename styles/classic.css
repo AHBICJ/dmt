@@ -2,7 +2,6 @@
 @import url("pagination.css");
 .pagination{
     display: inline-block;
-    margin: 0 auto;
 }
 .T{
     margin-bottom: 2px;
