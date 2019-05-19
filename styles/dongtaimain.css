@@ -1,47 +1,41 @@
 .bigleft {
     overflow: hidden;
     float: left;
-    width: 680px;
+    width: 340px;
     height: auto;
 }
 
 .left {
     overflow: hidden;
     float: left;
-    width: 680px;
+    width: 340px;
     height: auto;
     margin-bottom: 50px;
 }
 
 .left img {
-    width: 400px;
+    width: 280px;
     height: auto;
     display: block;
     margin: 0px auto;
 }
-
-.bigright {
-    width: 370px;
-    height: auto;
-    overflow: hidden;
-    float: right;
+a h2{
+    font-size: 20px;
 }
+hr{
+    margin:20px auto 20px;
+    width:25%;
+    border: #E6C284 1px  solid;
 
-.right {
-    width: 370px;
-    height: auto;
-    overflow: hidden;
-    float: right;
-    margin-bottom: 40px;
 }
-
-.right img {
-    width: 250px;
-    height: 300px;
-    display: block;
-    margin: 0px auto;
+.Title{
+    width: 100%;
+    margin: 40px auto 40px;
 }
-
+h1{
+    text-align: center;
+    font-size: 30px;
+}
 p {
     text-indent: 2em;
     line-height: 1.5;
@@ -49,10 +43,8 @@ p {
     margin-top: 12px;
     margin-bottom: 6px;
 }
-
-/* main已经结束 */
-/* 修改东西 */
-.BK370 .MM{
-    width: 310px;
-    padding: 0 30px;
+.MR
+{
+    margin-right: 40px;
 }
+/* main已经结束 */
