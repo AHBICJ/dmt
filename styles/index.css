@@ -1,208 +1,70 @@
 @import url("base.css");
-
-*{
-    font-size: 15px;
+*{ font-size: 15px;}
+.leftcon{ float: left;}
+.rightcon{ float: right;}
+.mainOut{ background:url(../images/lib/libBG.jpg) no-repeat bottom center;}
+.main{ padding-bottom: 40px;}
+.T{
+    margin-bottom: 2px;
 }
-
-.leftcon{
-    float: left;
-
-}
-.rightcon{
-    float: right;
-}
-
-.mainOut{
-    background:url(../images/lib/libBG.jpg) no-repeat bottom center;
-}
-.container {
-    height: 300px;
-    width: 670px;
-    position: relative;
-}
-
-/*三个按钮*/
-.tab {
-    margin: 0;
-    display: inline-block;
-    width: 220px;
-    height: 40px;
-}
-
-/*三个按钮*/
-.cqbk{
-    background: url(../images/lib/cqbk.png) no-repeat;
-}
-.fsbk{
-    background: url(../images/lib/fsbk.png) no-repeat;
-}
-.lpbk{
-    background: url(../images/lib/lpbk.png) no-repeat;
-}
-/*三个按钮 激活*/
-.cqbk.active {
-    background: url(../images/lib/cqbk_a.png) no-repeat;
-}
-.fsbk.active{
-    background: url(../images/lib/fsbk_a.png) no-repeat;
-}
-.lpbk.active{
-    background: url(../images/lib/lpbk_a.png) no-repeat;
-}
-
-.content {
-    display: none;
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    height: 250px;
-}
-
-.show{
-    display: block;
-}
-.hide{
-    display: none;
-}
-
-.PD15{
-    padding-bottom: 15px;
-}
-
-.main{
-    padding-bottom: 40px;
-}
-
 /* 越剧介绍 */
-.yjjs .MM p{
-    text-indent: 2em;
-    line-height: 26px;
-}
-
-.yjjs .MM p span a{
-    padding-left: 5px;
-    color: #999;
-}
-.yjjs .MM p span a:hover{
-    padding-left: 10px;
-    color: #dfb162;
-}
-
+.yjjs .MM p{ text-indent: 2em; line-height: 26px;}
+.yjjs .MM p span a{ padding-left: 5px; color: #999;}
+.yjjs .MM p span a:hover{ padding-left: 10px; color: #dfb162;}
 /* 越剧知识 */
 .yjzs .MM ul li a {
-	width: 245px;
-    height: 30px;
-    line-height: 30px;
+	width: 245px; height: 30px; line-height: 30px;
 	padding-left: 15px;
 	background: url(/images/libg.png) no-repeat 2px 12px;
 	overflow: hidden;
 	white-space: nowrap;
 	display: block;
-	text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
-
 .yjzs .MM ul li a:hover {
 	padding-left: 20px;
 	background: url(../images/libg.png) no-repeat 4px 12px;
-	color: #dfb162;
+    color: #dfb162;
 }
 
+/*越剧百科*/
+.container { height: 300px; width: 670px; position: relative;}
+/*三个按钮*/
+.tab { margin: 0; display: inline-block; width: 220px; height: 40px;}
+/*三个按钮*/
+.cqbk{ background: url(../images/lib/cqbk.png) no-repeat;}
+.fsbk{ background: url(../images/lib/fsbk.png) no-repeat;}
+.lpbk{ background: url(../images/lib/lpbk.png) no-repeat;}
+/*三个按钮 激活*/
+.cqbk.active { background: url(../images/lib/cqbk_a.png) no-repeat;}
+.fsbk.active{ background: url(../images/lib/fsbk_a.png) no-repeat;}
+.lpbk.active{ background: url(../images/lib/lpbk_a.png) no-repeat;}
+.content { display: none; position: absolute; top: 50px; width: 100%; height: 250px;}
+/* 这个为content服务 出现在content之后 请勿移动 */
+.show{ display: block;}
+.hide{ display: none;}
 
+/* 越剧百科结束 */
 /* 越剧流派 */
-.con-top a{
-    padding-left: 5px;
-}
-.con-top a:hover{
-    padding-left: 10px;
-    color: #dfb162;
-}
-.con-top img{
-    width: 200px;
-    float: left;
-    margin-right: 10px;
-    margin-bottom: 5px;
-}
-.con-top p{
-    line-height: 26px;
-    text-indent: 2em;
-}
-.con-list {
-    display: flex;
-    flex-wrap: wrap;
-}
+.con-top a{ padding-left: 5px;}
+.con-top a:hover{ padding-left: 10px; color: #dfb162;}
+.con-top img{ width: 200px; float: left; margin-right: 10px; margin-bottom: 5px;}
+.con-top p{ line-height: 26px; text-indent: 2em;}
+.con-list { display: flex; flex-wrap: wrap;}
 .clear{clear:both; height: 0; line-height: 0; font-size: 0}
-.con-list li {
-    width: 134px;
-    height:40px;
-    text-align: center;
-    background: url("../images/lib/li.png") no-repeat center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+.con-list li { width: 134px; height:40px; text-align: center; background: url("../images/lib/li.png") no-repeat center; margin-top: 10px; margin-bottom: 10px;}
+.con-list li a { width: 134px; height: 40px; line-height: 40px; display: block; font-weight: bold; font-size: 16px; font-family: "宋体";}
+.con-list li:hover{ background-image: url("../images/lib/li_hover.png");}
+.changqiang  p{ line-height: 30px;}
+.changqiang  hr { margin: 25px 0 10px;}
 
-.con-list li a {
-    width: 134px;
-    height: 40px;
-    line-height: 40px;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: "宋体";
-}
-.con-list li:hover{
-    background-image: url("../images/lib/li_hover.png");
-}
-
-.changqiang  p{
-    line-height: 30px;
-}
-.changqiang  hr {
-    margin: 25px 0 10px;
-}
-
-
-.spsx{
-    width: 100%;
-}
-
-.spsx-pics{
-    box-sizing: border-box;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.spsx-pics-con{
-    margin: 10px auto;
-    text-align: center;
-}
-.spsx-pics a,.spsx-pics img{
-    transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-.spsx-pics a:hover{
-    color: #dfb162;
-    padding: 0 15px !important;
-    text-shadow:2px 2px 10px rgba(50, 50, 50, 0.3);
-}
-.spsx-pics a:active{
-    color: #dfb162;
-    padding: 0 15px !important;
-    text-shadow:none;
-}
-.spsx-pics img{
-    width: 200px;
-    height: 125px;
-    display: block;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    box-shadow:2px 3px 8px -5px #333333;
-}
-
-.spsx-pics a:hover img{
-    box-shadow:2px 3px 8px -3px #333333;
-}
-.spsx-pics a:active img{
-    transition: .1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    box-shadow:2px 3px 8px -7px #333333;
-}
-
+.spsx{ width: 100%;}
+.spsx-pics{ box-sizing: border-box; margin: 0 auto; display: flex; flex-wrap: wrap;}
+.spsx-pics-con{ margin: 10px auto; text-align: center;}
+.spsx-pics a,.spsx-pics img{ transition: .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);}
+.spsx-pics a:hover{ color: #dfb162; padding: 0 15px !important; text-shadow:2px 2px 10px rgba(50, 50, 50, 0.3);}
+.spsx-pics a:active{ color: #dfb162; padding: 0 15px !important; text-shadow:none;}
+.spsx-pics img{ width: 200px; height: 125px; display: block; border-radius: 2px; margin-bottom: 10px; box-shadow:2px 3px 8px -5px #333333;}
+.spsx-pics a:hover img{ box-shadow:2px 3px 8px -3px #333333;}
+.spsx-pics a:active img{ transition: .1s cubic-bezier(0.445, 0.05, 0.55, 0.95); box-shadow:2px 3px 8px -7px #333333;}
 

@@ -1,11 +1,18 @@
-@import url(detail.css);
-@import url(pagination.css);
+@import url(base.css);
 
-.leftcon h2 {
-    font-family: 'FZQK';
-    font-size: 28px;
-    font-weight: 300;
-    margin: 10px 0;
+/* 左侧框 */
+.leftcon {
+    float: left;
+    width: 730px;
+}
+
+.rightcon{
+    float: right;
+    width: 320px;
+}
+
+.T{
+    margin-bottom: 2px;
 }
 
 .con-top {
