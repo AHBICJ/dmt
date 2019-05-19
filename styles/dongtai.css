@@ -86,6 +86,7 @@ input[type='submit'] {
 input[type='submit']:hover {
     color: white;
     background-color: #DDAC58;
+    cursor: pointer;
 }
 
 .mytext p {
