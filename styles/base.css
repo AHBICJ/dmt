@@ -84,7 +84,7 @@ a {text-decoration: none; transition: .1s linear; color: #333;}
 .T h2 { font-family: 'FZQK'; font-size: 28px; float: left; font-weight: 300;}
 .T span { float: right; height: 20px; line-height: 32px; text-align: right; font-size: 13px;}
 .T span a{ padding-right: 2px;}
-.T span a:hover { padding-right: 0px; color: #C18D46;}
+.T span a:hover { padding-right: 0px; color: #dfb162;}
 
 .PD15{ padding-bottom: 15px;}
 .PD40{ padding-bottom: 40px;}

@@ -28,7 +28,7 @@
 }
 
 /*越剧百科*/
-.container { height: 300px; width: 670px; position: relative;}
+.container { height: 250px; width: 670px; position: relative;}
 /*三个按钮*/
 .tab { margin: 0; display: inline-block; width: 220px; height: 40px;}
 /*三个按钮*/
@@ -98,4 +98,11 @@
 .yjjy .MM p a:hover{
     color: #dfb162;
     margin-right: 10px;
+}
+
+.T a h2{
+    transition: 0.15s linear;
+}
+.T a:hover h2{
+    color: #dfb162;
 }
