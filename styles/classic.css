@@ -7,3 +7,7 @@
 .T{
     margin-bottom: 2px;
 }
+
+.mainOut{
+    background:url(../images/lib/libBG.jpg) no-repeat bottom center;
+}

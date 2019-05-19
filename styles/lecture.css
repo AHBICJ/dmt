@@ -87,3 +87,8 @@
 	background: url(../images/libg.png) no-repeat 4px 12px;
 	color: #dfb162;
 }
+
+
+.mainOut{
+    background:url(../images/lib/libBG.jpg) no-repeat bottom center;
+}

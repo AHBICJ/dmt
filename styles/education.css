@@ -25,7 +25,7 @@
 
 a h2 {
     font-size: 20px;
-    margin: 8px auto -2px;
+    margin: 6px auto 6px;
 }
 
 hr {
@@ -49,7 +49,6 @@ p {
     text-indent: 2em;
     line-height: 1.5;
     font-size: 16px;
-    margin-top: 6px;
 }
 
 .MR {
@@ -67,13 +66,21 @@ p {
  .MM a:hover {
     color: #dfb162;
 }
+.MM{
+    overflow: hidden;
+}
 
 .MM .a{
     color: #999;
     float: right;
+    font-size: 14px;
+    line-height: 24px;
     margin-right: 18px;
 }
 .MM .a:hover{
     margin-right: 10px;
-  
+}
+
+.mainOut{
+    background:url(../images/lib/libBG.jpg) no-repeat bottom center;
 }
