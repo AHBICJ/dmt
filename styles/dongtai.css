@@ -1,3 +1,5 @@
+@import url("detail.css");
+
 .bigleft {
     overflow: hidden;
     float: left;
@@ -20,6 +22,21 @@
     margin: 10px auto;
 }
 
+.left .myimg1 { 
+    width: 200px;
+    float: right;
+    height: auto;
+    margin: 0px 0px  0px 5px;
+}
+
+
+.left .myimg2 {
+    width: 200px;
+    float: left;
+    height: auto;
+    margin: 5px 10px  5px  0px;
+}
+
 .bigright {
     width: 320px;
     height: auto;
@@ -28,7 +45,6 @@
 }
 
 .right {
-    margin-top: 50px;
     width: 320px;
     height: auto;
     overflow: hidden;
@@ -47,6 +63,8 @@ p {
     text-indent: 2em;
     line-height: 1.5;
     font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .text {
@@ -81,16 +99,13 @@ input[type='submit'] {
     margin-top: 20px;
     background-color: #f1f1f1;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 input[type='submit']:hover {
     color: white;
     background-color: #DDAC58;
     cursor: pointer;
-}
-
-.mytext p {
-    text-indent: 0em;
 }
 
 .BK320 {
@@ -120,12 +135,18 @@ input[type='submit']:hover {
     padding: 0 10px;
     height: auto;
 }
-
-.T {
+ /* 改东西 */
+.bigleft .T {
     border-bottom: solid 4px #C18D46;
     margin-bottom: 15px;
 }
-
+.right .T {
+    margin-bottom: 2px;
+}
+.mytext p{
+    text-indent: 0em;
+    margin:  0 0 10px 0;
+}
 .title {
     width: 100%;
     text-align: center;
