@@ -44,7 +44,7 @@
 
             <div class="leftcon yjsx">
                 <div class="T">
-                    <h2>越剧赏析</h2>
+                        <a href="../enjoy.html"><h2>越剧赏析</h2></a>
                 </div>
                 <div class="C maincon">
                     <div class="contentArea">
@@ -92,7 +92,7 @@
                                                 for="t1false"></label><label for="t1false">错误</label>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                                 <div class="ques" id="q2">
@@ -118,14 +118,14 @@
                                                 for="t2d">云肩</label>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <input type="submit" value="提交" id="submit">
                             </form>
                         </div>
                         <div class="BB"></div>
                         <div id="res"></div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@
                 var time = 0;
                 const sub = document.querySelector('#submit');
                 sub.addEventListener('click', e => {
-        
+
                     var ans = $("#quiz").serializeObject();;
                     console.log(ans);
                     var rescore = 0;
@@ -194,7 +194,7 @@
                     if (ans['t2'] == "a,b,c") {
                         rescore++;
                     }
-        
+
                     time++;
                     var resnode = document.getElementById('res');
                     switch (rescore) {
@@ -213,7 +213,7 @@
                             } else {
                                 resnode.innerHTML = "恭喜你答对所有题目<br> 根据你的答题情况 我们认为您是 " + resmap[rescore];
                             }
-        
+
                             break;
                     }
                     $(".jiexi").show();
