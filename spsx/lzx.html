@@ -81,7 +81,7 @@
                         <div class="MM">
                             <form id="quiz" class="quiz" onsubmit="return false">
                                 <div class="ques" id="q1">
-                                    <h3 class="ques-title">应当认为越剧《梁祝》最初的作者是文人，而不是文人？</h3>
+                                    <h3 class="ques-title">该视频中 至少出现了8个流派？</h3>
                                     <div class="ques-ans-group">
                                         <div class="singleOption">
                                             <input type="radio" name="t1" id="t1true" value="true"><label class="singleHide"
@@ -92,37 +92,33 @@
                                                 for="t1false"></label><label for="t1false">错误</label>
                                         </div>
                                     </div>
-                                    <div class="jiexi" data-ans="1">
-                                        解析
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="ques" id="q2">
-                                    <h3 class="ques-title">越剧《梁祝》参考了那些书籍？</h3>
+                                    <h3 class="ques-title">该视频中 出现了下列哪些服饰类型</h3>
                                     <div class="ques-ans-group">
                                         <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="a" id="t2a"><label
                                                 class="multipleHide" for="t2a"></label><label
-                                                for="a">《梁山伯祝英台》</label>
+                                                for="a">帔</label>
                                         </div><div class="multipleOption">
                                             <input type="checkbox" name="t2" value="b" id="t2b"><label
                                                 class="multipleHide" for="t2b"></label><label
-                                                for="t2b">《柳荫记》</label>
+                                                for="t2b">古装衣</label>
                                         </div>
                                         <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="c" id="t2c"><label
                                                 class="multipleHide" for="t2c"></label><label
-                                                for="t2c">《中国大百科全书·戏曲曲艺》</label>
+                                                for="t2c">官衣</label>
                                         </div>
                                         <div class="multipleOption">
                                             <input type="checkbox" name="t2" value="d" id="t2d"><label
                                                 class="multipleHide" for="t2d"></label><label
-                                                for="t2d">《梁山伯祝英台夫妇攻书还魂团圆记》</label>
+                                                for="t2d">云肩</label>
                                         </div>
                                     </div>
-                                    <div class="jiexi" data-ans="2">
-                                        解析
-                                    </div>
+                                    
                                 </div>
                                 <input type="submit" value="提交" id="submit">
                             </form>
@@ -195,7 +191,7 @@
                     if (ans['t1'] == "true") {
                         rescore++;
                     }
-                    if (ans['t2'] == "a,d") {
+                    if (ans['t2'] == "a,b,c") {
                         rescore++;
                     }
         

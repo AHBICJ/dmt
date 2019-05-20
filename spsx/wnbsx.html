@@ -88,45 +88,47 @@
                         <div class="MM">
                             <form id="quiz" class="quiz" onsubmit="return false">
                                 <div class="ques" id="q1">
-                                    <h3 class="ques-title">越剧《五女拜寿》三女婿叫什么</h3>
+                                    <h3 class="ques-title">视频中的大小姐是属于哪个流派的</h3>
                                     <div class="ques-ans-group">
                                         <div class="singleOption">
-                                            <input type="radio" name="t1" id="t1true" value="true"><label
-                                                class="singleHide" for="t1true"></label><label for="t1true">严嵩</label>
+                                            <input type="radio" name="t1" id="t1true" value="true"><label class="singleHide"
+                                                for="t1true"></label><label for="t1true">徐派</label>
                                         </div>
                                         <div class="singleOption">
-                                            <input type="radio" name="t1" id="t1false" value="false"><label
-                                                class="singleHide" for="t1false"></label><label
-                                                for="t1false">邹应龙</label>
+                                            <input type="radio" name="t1" id="t1false" value="false"><label class="singleHide"
+                                                for="t1false"></label><label for="t1false">戚派</label>
                                         </div>
-                                    </div>
-                                    <div class="jiexi" data-ans="1">
-                                        解析
-                                    </div>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="t1false1" value="false"><label class="singleHide"
+                                                for="t1false1"></label><label for="t1false1">傅派</label>
+                                        </div>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="t1false2" value="false"><label class="singleHide"
+                                                for="t1false2"></label><label for="t1false2">范派</label>
+                                        </div>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="t1false3" value="false"><label class="singleHide"
+                                                for="t1false3"></label><label for="t1false3">尹派</label>
+                                        </div>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t1" id="t1false4" value="false"><label class="singleHide"
+                                                for="t1false4"></label><label for="t1false4">王派</label>
+                                        </div>
+                                    </div>     
                                 </div>
-
                                 <div class="ques" id="q2">
-                                    <h3 class="ques-title">越剧《梁祝》杨家经受了一场兴衰荣辱的变迁寿堂上呈现出一派 _____ 的景象</h3>
+                                    <h3 class="ques-title">视频中邹士龙 有没有说过 “请姑娘放心喝下这暖肚汤”？</h3>
                                     <div class="ques-ans-group">
-                                        <div class="multipleOption">
-                                            <input type="checkbox" name="t2" value="a" id="t2a"><label
-                                                class="multipleHide" for="t2a"></label><label for="a">尊老爱幼</label>
+                                        <div class="singleOption">
+                                            <input type="radio" name="t2" value="a" id="t2a"><label
+                                                class="singleHide" for="t2a"></label><label
+                                                for="a">说过</label>
+                                        </div><div class="singleOption">
+                                            <input type="radio" name="t2" value="b" id="t2b"><label
+                                                class="singleHide" for="t2b"></label><label
+                                                for="t2b">没说过</label>
                                         </div>
-                                        <div class="multipleOption">
-                                            <input type="checkbox" name="t2" value="b" id="t2b"><label
-                                                class="multipleHide" for="t2b"></label><label for="t2b">悲惨凄切</label>
-                                        </div>
-                                        <div class="multipleOption">
-                                            <input type="checkbox" name="t2" value="c" id="t2c"><label
-                                                class="multipleHide" for="t2c"></label><label for="t2c">姐妹互敬互爱</label>
-                                        </div>
-                                        <div class="multipleOption">
-                                            <input type="checkbox" name="t2" value="d" id="t2d"><label
-                                                class="multipleHide" for="t2d"></label><label for="t2d">乐享天伦</label>
-                                        </div>
-                                    </div>
-                                    <div class="jiexi" data-ans="2">
-                                        解析
+                                        
                                     </div>
                                 </div>
                                 <input type="submit" value="提交" id="submit">
@@ -134,7 +136,7 @@
                         </div>
                         <div class="BB"></div>
                         <div id="res"></div>
-
+                        
                     </div>
                 </div>
             </div>
@@ -200,7 +202,7 @@
                     if (ans['t1'] == "false") {
                         rescore++;
                     }
-                    if (ans['t2'] == "a,c,d") {
+                    if (ans['t2'] == "a") {
                         rescore++;
                     }
 
