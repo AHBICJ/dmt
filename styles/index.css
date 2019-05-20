@@ -70,6 +70,7 @@
 .content p a{
     float: right;
     padding-right: 10px;
+    color: #999;
 }
 .content p a:hover{
     padding-right: 5px;

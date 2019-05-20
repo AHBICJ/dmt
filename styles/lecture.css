@@ -32,6 +32,7 @@
 .con-top p a{
     float: right;
     padding-right: 10px;
+    color: #999;
 }
 .con-top p a:hover {
     color: #dfb162;
